@@ -1,0 +1,257 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] [ANNOUNCE] Project mondorescue version 2.2.9	is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2009-October/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%202.2.9%0A%09is%20now%20available&In-Reply-To=%3C20091012224901.42F3540C23%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] [ANNOUNCE] Project mondorescue version 2.2.9	is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%202.2.9%0A%09is%20now%20available&In-Reply-To=%3C20091012224901.42F3540C23%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] [ANNOUNCE] Project mondorescue version 2.2.9	is now available">bruno at mondorescue.org
+       </A><BR>
+    <I>Tue Oct 13 00:49:01 CEST 2009</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#47">[ date ]</a>
+              <a href="thread.html#47">[ thread ]</a>
+              <a href="subject.html#47">[ subject ]</a>
+              <a href="author.html#47">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Project mondorescue version 2.2.9 is now available
+
+The project team is happy to announce the availability of a newest version of
+MondoRescue 2.2.9. Enjoy it as usual!
+
+Among the usual bug fixes (and new bugs of course :-) you may want to note that
+MondoRescue now support SSHFS in addition to NFS, with more to come, latest
+initrd FS for 2.6.30+ kernels, exclusion of devices and partitions also in LVM,
+pre and post restore scripts, new network drivers (bnx2x, e1000e), ia64 fixes,
+grub2, ... More details at the end
+
+You may want to loon at the README.* files installed with mindi for new PXE and
+bootparams options, as well as the man pages.
+
+Please also note the modifications in the development process, as mentioned
+here
+
+Now available at <A HREF="ftp://ftp.mondorescue.org">ftp://ftp.mondorescue.org</A>
+
+./debian/3.1/mondo_2.2.9_i386.deb                  ./debian/3.1/mindi_2.0.7_i386.deb
+./debian/4.0/mondo_2.2.9_i386.deb                  ./debian/4.0/mindi_2.0.7_i386.deb
+./debian/4.0/mondo_2.2.9_amd64.deb                 ./debian/4.0/mindi_2.0.7_amd64.deb
+./debian/5.0/mondo_2.2.9_i386.deb                  ./debian/5.0/mindi_2.0.7_i386.deb
+./debian/5.0/mondo_2.2.9_amd64.deb                 ./debian/5.0/mindi_2.0.7_amd64.deb
+./fedora/4/mondo-2.2.9-1.fc4.i386.rpm              ./fedora/4/mindi-2.0.7-1.fc4.i386.rpm
+./fedora/5/mondo-2.2.9-1.fc5.i386.rpm              ./fedora/5/mindi-2.0.7-1.fc5.i386.rpm
+./fedora/6/mondo-2.2.9-1.fc6.i386.rpm              ./fedora/6/mindi-2.0.7-1.fc6.i386.rpm
+./fedora/6/mondo-2.2.9-1.fc6.x86_64.rpm            ./fedora/6/mindi-2.0.7-1.fc6.x86_64.rpm
+./fedora/7/mondo-2.2.9-1.fc7.i386.rpm              ./fedora/7/mindi-2.0.7-1.fc7.i386.rpm
+./fedora/7/mondo-2.2.9-1.fc7.x86_64.rpm            ./fedora/7/mindi-2.0.7-1.fc7.x86_64.rpm
+./fedora/8/mondo-2.2.9-1.fc8.i386.rpm              ./fedora/8/mindi-2.0.7-1.fc8.i386.rpm
+./fedora/8/mondo-2.2.9-1.fc8.x86_64.rpm            ./fedora/8/mindi-2.0.7-1.fc8.x86_64.rpm
+./fedora/9/mondo-2.2.9-1.fc9.i386.rpm              ./fedora/9/mindi-2.0.7-1.fc9.i386.rpm
+./fedora/9/mondo-2.2.9-1.fc9.x86_64.rpm            ./fedora/9/mindi-2.0.7-1.fc9.x86_64.rpm
+./fedora/10/mondo-2.2.9-1.fc10.i386.rpm            ./fedora/10/mindi-2.0.7-1.fc10.i386.rpm
+./fedora/10/mondo-2.2.9-1.fc10.x86_64.rpm          ./fedora/10/mindi-2.0.7-1.fc10.x86_64.rpm
+./fedora/11/mondo-2.2.9-1.fc11.i586.rpm            ./fedora/11/mindi-2.0.7-1.fc11.i586.rpm
+./fedora/11/mondo-2.2.9-1.fc11.x86_64.rpm          ./fedora/11/mindi-2.0.7-1.fc11.x86_64.rpm
+./gentoo/nover/mondo-2.2.9.ebuild                  ./gentoo/nover/mindi-2.0.7.ebuild
+./mandriva/2008.0/mondo-2.2.9-1.mdv2008.0.i586.rpm ./mandriva/2008.0/
+                                                   mindi-2.0.7-1.mdv2008.0.i586.rpm
+./mandriva/2008.0/                                 ./mandriva/2008.0/
+mondo-2.2.9-1.mdv2008.0.x86_64.rpm                 mindi-2.0.7-1.mdv2008.0.x86_64.rpm
+./mandriva/2008.1/mondo-2.2.9-1.mdv2008.1.i586.rpm ./mandriva/2008.1/
+                                                   mindi-2.0.7-1.mdv2008.1.i586.rpm
+./mandriva/2008.1/                                 ./mandriva/2008.1/
+mondo-2.2.9-1.mdv2008.1.x86_64.rpm                 mindi-2.0.7-1.mdv2008.1.x86_64.rpm
+./mandriva/2009.0/mindi-2.0.7-1.mdv2009.0.i586.rpm ./mandriva/2009.0/
+                                                   mindi-2.0.7-1.mdv2009.0.x86_64.rpm
+./mandriva/2009.1/                                 ./mandriva/2009.1/
+mondo-2.2.9-1.mdv2009.1.x86_64.rpm                 mindi-2.0.7-1.mdv2009.1.x86_64.rpm
+./redhat/7.3/mindi-2.0.7-1.rh73.i386.rpm           ./redhat/9/mindi-2.0.7-1.rh9.i386.rpm
+./rhel/2.1/mindi-2.0.7-1.rhel21.i386.rpm           ./rhel/2.1/mondo-2.2.9-1.rhel21.i386.rpm
+./rhel/3/mondo-2.2.9-1.rhel3.i386.rpm              ./rhel/3/mindi-2.0.7-1.rhel3.i386.rpm
+./rhel/4/mondo-2.2.9-1.rhel4.i386.rpm              ./rhel/4/mindi-2.0.7-1.rhel4.i386.rpm
+./rhel/4/mondo-2.2.9-1.rhel4.x86_64.rpm            ./rhel/4/mindi-2.0.7-1.rhel4.x86_64.rpm
+./rhel/5/mondo-2.2.9-1.rhel5.i386.rpm              ./rhel/5/mindi-2.0.7-1.rhel5.i386.rpm
+./rhel/5/mondo-2.2.9-1.rhel5.x86_64.rpm            ./rhel/5/mindi-2.0.7-1.rhel5.x86_64.rpm
+./sles/9/mondo-2.2.9-1.sles9.i586.rpm              ./sles/9/mindi-2.0.7-1.sles9.i586.rpm
+./sles/10/mondo-2.2.9-1.sles10.i586.rpm            ./sles/10/mindi-2.0.7-1.sles10.i586.rpm
+./sles/10/mondo-2.2.9-1.sles10.x86_64.rpm          ./sles/10/mindi-2.0.7-1.sles10.x86_64.rpm
+./sles/11/mindi-2.0.7-1.sles11.i586.rpm            ./sles/11/mindi-2.0.7-1.sles11.x86_64.rpm
+./suse/10.0/mondo-2.2.9-1.suse10.0.i586.rpm        ./suse/10.0/mindi-2.0.7-1.suse10.0.i586.rpm
+./suse/10.1/mondo-2.2.9-1.suse10.1.i586.rpm        ./suse/10.1/mindi-2.0.7-1.suse10.1.i586.rpm
+./ubuntu/7.04/mondo_2.2.9_i386.deb                 ./ubuntu/7.04/mindi_2.0.7_i386.deb
+./ubuntu/7.04/mondo_2.2.9_amd64.deb                ./ubuntu/7.04/mindi_2.0.7_amd64.deb
+./ubuntu/6.06/mondo_2.2.9_i386.deb                 ./ubuntu/6.06/mindi_2.0.7_i386.deb
+./ubuntu/7.10/mondo_2.2.9_i386.deb                 ./ubuntu/7.10/mindi_2.0.7_i386.deb
+./ubuntu/7.10/mondo_2.2.9_amd64.deb                ./ubuntu/7.10/mindi_2.0.7_amd64.deb
+./ubuntu/8.04/mondo_2.2.9_i386.deb                 ./ubuntu/8.04/mindi_2.0.7_i386.deb
+./ubuntu/8.04/mondo_2.2.9_amd64.deb                ./ubuntu/8.04/mindi_2.0.7_amd64.deb
+./ubuntu/8.10/mondo_2.2.9_i386.deb                 ./ubuntu/8.10/mindi_2.0.7_i386.deb
+./ubuntu/8.10/mondo_2.2.9_amd64.deb                ./ubuntu/8.10/mindi_2.0.7_amd64.deb
+./ubuntu/9.04/mondo_2.2.9_i386.deb                 ./ubuntu/9.04/mindi_2.0.7_i386.deb
+./asianux/3/mondo-2.2.9-1.asianux3.i386.rpm        ./asianux/3/mindi-2.0.7-1.asianux3.i386.rpm
+./asianux/3/mondo-2.2.9-1.asianux3.x86_64.rpm      ./asianux/3/mindi-2.0.7-1.asianux3.x86_64.rpm
+./asianux/2/mondo-2.2.9-1.asianux2.x86_64.rpm      ./asianux/2/mindi-2.0.7-1.asianux2.x86_64.rpm
+
+As usual source packages are also available in the same directory.i And missing
+one will be added ASAP
+
+Changes are :
+
+MINDI CHANGES
+
+- Adds a conf file example for mindi. Fix #360 (Bruno Cornec)
+- cdrkit support for mindi. Fix #359 (Matthew Cline)
+- Exclude CIFS mounts from the mountlist. Fix #288 (Bruno Cornec)
+- Adds support for initramfs (gzip/bzip2/lzma) or ext2/3/cpio initrd support
+with kernel 2.6.30+. Fix #353 (Bruno Cornec/Hugo Vanwoerkom)
+- Improve udev timeouts (Bruno Cornec)
+- Fix udev support in init for Mandriva 2009.1 (Bruno Cornec)
+- Split deplist.txt in multiple conf files under deplist.d (Bruno Cornec)
+- Adds Fuse SSHFS support at restore time (Bruno Cornec)
+- Adds support for ext3 compressed initrd and other compression format
+initramfs for Debian (Bruno Cornec)
+- analyze-my-lvm now removes excluded devices from list coming from
+mondoarchive (Bruno Cornec)
+- Adds support for bnx2x (BL 460 G6), igb (Intel cards) and auth_rpcgss Debian
+kernel 2.6.31 (Bruno Cornec/Maxime)
+- Split deplist.conf in multiple files under deplist.d and keep it only for
+local changes (Bruno Cornec)
+- Change NFS support into a generic NetFS support. keyword changed from nfs...
+to netfs... and proto added (Bruno Cornec)
+- Addition of a nomd option to avoid starting mdadm (Bruno Cornec)
+- mpath is only started if there was a mpath entry in mountlist (Bruno Cornec)
+- Fix SElinux support (Laurent Gehlen)
+- Message file rewritten. Fix #160 and #346 (Bruno Cornec)
+- Add support for pre and post scripts at restore time (Bruno Cornec)
+- Remove inactive vg from lvmscan output in analyze-my-lvm (Bruno Cornec)
+- Do not exit abruptly in any case in analyze-my-lvm when detecting an analysis
+issue, but return instead (Bruno Cornec)
+- MINDI_CACHE is only purged if a real work is asked to mindi (Bruno Cornec)
+- Adds ssh features (client and server) in the DR set (Bruno Cornec)
+- Tries to create tmpfs starting at 128 MB to allow for larger content (Adolf
+Hartsenberg/Bruno Cornec)
+- Adds the timeout parameter to udevadm to avoid default timeout of 180 s
+(Bruno Cornec)
+- Fix a bug on Debian 5 where proc appears in fstab and afio in /bin (Bud
+Rogers/Bruno Cornec)
+- Security Fix for a remaining /tmp hard coded reference for 1 log file only
+used on ia64 (parted2fdisk.pl) (Gentoo/Bruno Cornec)
+- Fix #310: adds support for nfspath (Bruno Cornec)
+- mindi now adds to DR set the perl modules it needs to work (now for ia64)
+(Bruno Cornec)
+- Fix #331 by forcing nfs mode in case of pxe boot (Bruno Cornec)
+- Adds support of keyword net at boot prompt (Bruno Cornec)
+- ReadAllLink now normalize paths with .. in their name to remove that (fix bug
+on OEL4) (Bruno Cornec)
+- Fix version syntax for new lvmdiskscan commands by calling --version instead
+of --help (Bruno Cornec)
+- Adds support for additional Intel Network driver e1000e, ide-gd_mod,
+sata_via, dc395x (Bruno Cornec)
+- Fix a bug with nosegneg optimized libs on RHEL (Bruno Cornec)
+- multiple ia64 fixes in mindi, parted2fdisk.pl and init (Giuseppe Grassi)
+- Fix serial support on ia64 by linking /dev/tty to /dev/ttyS0 (Giuseppe
+Grassi)
+
+MONDO CHANGES
+
+- Adds support for grub2 conf file grub.cfg in addition to menu.lst (Bruno
+Cornec)
+- priority given to env var for tmpdir (Bruno Cornec)
+- fuse FS excluded from tmpdir computation (Bruno Cornec)
+- DSF now also supports partitions in addition to full disks (Bruno Cornec)
+- Adds Fuse SSHFS support at restore time (Bruno Cornec)
+- Excluded devices are now handled fully (with bkpinfo-&gt;exclude_devs),
+including in LVM (Bruno Cornec)
+- Change NFS support into a generic NetFS support. keyword changed from nfs...
+to netfs... and proto added (Bruno Cornec)
+- star only supports ACL when used with exustar mode. Fix #356 (Bruno Cornec)
+- Modify getfattr call to have all extended attributes, including non user
+ones. Fix #357. (Kevin Ritzenthaler)
+- Avoid asking the Prefix name in NFS mode twice (Bruno Cornec)
+- Fix a case where the NFS dir in restore mode was mounted rw (linked to bug #
+291) (Bruno Cornec)
+- Solve tmp dir creation which sometimes was trying to create /%xx dirs. Fix #
+293. (Bruno Cornec)
+- Removes some memory leaks with valgrind usage (Bruno Cornec)
+- Improve dynamic memory allocation with mr_asprintf (Bruno Cornec)
+- Remove all the most obvious bad call to strcat and replace by mr_strcat as
+appropriate (Bruno Cornec)
+- Remove the iamhere function (Bruno Cornec)
+- Remove mr_string.c|.h useless and in duplication with mr_str.c|.h (Bruno
+Cornec)
+- Use new libmr.a in build process (Bruno Cornec)
+- Fix a bug (seg fault) when a too large mountlist was used (Bruno Cornec)
+- Adds test program for mountlist and truncate_to_drive_name (Bruno Cornec)
+- Add support of user for NFS write and fixes #316 (Bruno Cornec)
+- mount the NFS dir in mondoarchive, if not already mounted, but present in
+fstab and fixes #304 (Bruno Cornec)
+- Usage of partprobe at restore time if possible (Bruno Cornec)
+- Allow the possibility to enter temp and scratch dir in the newt interface.
+Fixes #326. (Bruno Cornec)
+- Protection of chains (file names) passed to system with mr_stresc which may
+contain strange chars (Bruno Cornec)
+- Improve autoconf cuild process (Bruno Cornec)
+- Some SuSE have ramdisk as modules, so modprobe brd first before testing for
+ramdisk presence (Stephan Lauffer)
+- Security fix for a remaining /tmp hard coded reference which shouln't have a
+small potential impact for mondo-prep.c as the file was removed before being
+recreated and usage is very short (Gentoo/Bruno Cornec)
+- Fix lack of formating (discovered by the new Mandriva build process) (Bruno
+Cornec)
+- Create a new define for MAX_MOUNTLIST_ENTRIES and increse
+MAX_TAPECATALOG_ENTRIES to solve a reported limit (Bruno Cornec)
+- Adds support of special partiion names (ida, cciss, mapth) for
+format-and-kludge-vfat (Bruno Cornec)
+- Fix a bug where partition number was wrong for mpath type of dev (Bruno
+Cornec)
+- Remove the maxdepth param in find to take in account deeply mounted proc file
+systems (Bruno Cornec)
+- Fix bugs on array size reported by SuSE build system (Stephan Lauffer)
+- Fix a very old bug for partiion labelling after restoration where a fstab
+with empty lines was causing the script to abort. (Ward Mundy/Bruno Cornec)
+- Deliver again the format-and-kludge-vfat script (Bruno Cornec)
+- Fix NTFS support at restore time (Conor Daly)
+- Really fix the Ubuntu issue with a separate /var this time (Bruno Cornec)
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#47">[ date ]</a>
+              <a href="thread.html#47">[ thread ]</a>
+              <a href="subject.html#47">[ subject ]</a>
+              <a href="author.html#47">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

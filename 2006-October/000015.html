@@ -1,0 +1,141 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] MondoRescue 2.2.0 is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2006-October/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20MondoRescue%202.2.0%20is%20now%20available&In-Reply-To=%3C20061009085440.GA10676%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000014.html">
+   <LINK REL="Next"  HREF="000016.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] MondoRescue 2.2.0 is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20MondoRescue%202.2.0%20is%20now%20available&In-Reply-To=%3C20061009085440.GA10676%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] MondoRescue 2.2.0 is now available">bruno at victoria.frmug.org
+       </A><BR>
+    <I>Mon Oct  9 10:54:41 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000014.html">[Mondorescue-announce] MondoRescue presentation goes live
+</A></li>
+        <LI>Next message: <A HREF="000016.html">[Mondorescue-announce] MondoRescue 2.2.0-2 is now available
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#15">[ date ]</a>
+              <a href="thread.html#15">[ thread ]</a>
+              <a href="subject.html#15">[ subject ]</a>
+              <a href="author.html#15">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>MondoRescue 2.2.0 is now available
+
+I'm happy to announce the availability of a newest version of mondoescue 2.2.0.
+Enjoy it as usual!
+
+Now available at <A HREF="ftp://ftp.mondorescue.org/">ftp://ftp.mondorescue.org/</A>
+
+./fedora/4/mindi-1.2.0-1.fc4.i386.rpm ./fedora/4/mondo-2.2.0-1.fc4.i386.rpm ./
+fedora/5/mindi-1.2.0-1.fc5.i586.rpm ./fedora/5/mondo-2.2.0-1.fc5.i586.rpm ./
+gentoo/1.6/mindi-1.2.0.tbz2 ./gentoo/1.6/mondo-2.2.0.tbz2 ./gentoo/1.6/
+mindi-1.2.0.ebuild ./gentoo/1.6/mondo-2.2.0.ebuild ./mandrake/10.2/
+mindi-1.2.0-1.102mdk.i586.rpm ./mandrake/10.2/mondo-2.2.0-1.102mdk.i586.rpm ./
+mandrake/10.1/mindi-1.2.0-1.101mdk.i586.rpm ./mandrake/10.1/
+mondo-2.2.0-1.101mdk.i586.rpm ./mandriva/2006.0/mindi-1.2.0-1.20060mdv.i586.rpm
+./mandriva/2006.0/mondo-2.2.0-1.20060mdv.i586.rpm ./mandriva/2007.0/
+mindi-1.2.0-1.20070mdv.i586.rpm ./mandriva/2007.0/
+mondo-2.2.0-1.20070mdv.i586.rpm ./redhat/7.3/mindi-1.2.0-1.rh73.i586.rpm ./
+redhat/7.3/mondo-2.2.0-1.rh73.i586.rpm ./redhat/9/mindi-1.2.0-1.rh9.i586.rpm ./
+redhat/9/mondo-2.2.0-1.rh9.i586.rpm ./rhel/3/mindi-1.2.0-1.rhel3.i586.rpm ./
+rhel/3/mondo-2.2.0-1.rhel3.i586.rpm ./rhel/4/mindi-1.2.0-1.rhel4.i586.rpm ./
+rhel/4/mondo-2.2.0-1.rhel4.i586.rpm ./sles/9/mindi-1.2.0-1.sles9.i586.rpm ./
+sles/9/mondo-2.2.0-1.sles9.i586.rpm ./sles/10/mindi-1.2.0-1.sles10.i586.rpm ./
+sles/10/mondo-2.2.0-1.sles10.i586.rpm ./src/mondo-2.2.0.tar.gz ./src/
+mondo-2.2.0.tar.bz2 ./src/mindi-1.2.0.tar.gz ./src/mindi-1.2.0.tar.bz2 ./suse/
+10.0/mindi-1.2.0-1.suse10.0.i586.rpm ./suse/10.0/
+mondo-2.2.0-1.suse10.0.i586.rpm ./suse/10.1/mindi-1.2.0-1.suse10.1.i586.rpm ./
+suse/10.1/mondo-2.2.0-1.suse10.1.i586.rpm
+
+As usual src.rpm packages are also available in the same directory.
+
+New with this version, you'll need the new mindi-busybox package from the same
+directory. The binaries delivered in mindi have been replaced by this package.
+
+Changes are :
+
+MINDI CHANGES
+
+- busybox is now a separate package and binaries are not provided anymore in
+mindi - Fix #37 (Bruno Cornec)
+- deplist.txt adapted to use more busybox modules (Bruno Cornec)
+- start-nfs now exports variables taken from PXE command line to mondo to
+override parameters during archiving - Fix bug #21 (Bruno Cornec)
+- Fix for bug #71 mindi now works correctly on x86_64 (Brendan Bouffler/Bruno
+Cornec)
+- ReadAllLink function added to mindi and 3 older functions suppressed + use of
+readlink where useful (Bruno Cornec)
+- Other fixes for labelled swap support (Michael Shapiro/Bruno Cornec)
+- Fix for bug #4 (B. Baumer)
+- Fix PXE documentation (Brendan Bouffler)
+- Attempt to fix bug #25 - bonding support (Michael Shapiro/Bruno Cornec)
+- Write start and finish time to log - Fix bug #33 (Bruno Cornec)
+- Fix for bug #46 (Klaus Ade Johnstad)
+
+
+MONDO CHANGES
+
+- start-nfs now exports variables taken from PXE command line to mondo to
+override parameters during archiving - Fix bug #21 (Bruno Cornec)
+- Fix for bug #71 mondo now works correctly on x86_64 (Brendan Bouffler/Bruno
+Cornec)
+- Fix for bug #4 (B. Baumer)
+- Fix PXE documentation (Brendan Bouffler)
+- Attempt to fix bug #25 - bonding support (Michael Shapiro/Bruno Cornec)
+- Write start and finish time to log - Fix bug #33 (Bruno Cornec)
+- New mr_stresc function to escape commands submitted to system and fixes
+[[debianBTS(379966)]] (Andree Leidenfrost)
+- New files mr_string.c and mr_string.h (v3.0 new organization) (Andree
+Leidenfrost)
+- Fix for [[debianBTS(320152)]] display problem in newt (Andree Leidenfrost)
+- Check for grub.conf being a symbolic link (Andree Leidenfrost)
+- AFS support (Andree Leidenfrost/Bruno Cornec)
+- Better post-nuke handling (first steps) (Andree Leidenfrost)
+- Icon for use in menus (Andree Leidenfrost)
+- Fix for bug #14 -E switch error (Bruno Cornec)
+- Fix for bug #6 mondorestore will ask for prefix during selectve restore
+(Bruno Cornec)
+- Fix for bug #21 prefix taken from PXE server first (Bruno Cornec)
+- Fix for bug #24 ps options (Bruno Cornec)
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000014.html">[Mondorescue-announce] MondoRescue presentation goes live
+</A></li>
+	<LI>Next message: <A HREF="000016.html">[Mondorescue-announce] MondoRescue 2.2.0-2 is now available
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#15">[ date ]</a>
+              <a href="thread.html#15">[ thread ]</a>
+              <a href="subject.html#15">[ subject ]</a>
+              <a href="author.html#15">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

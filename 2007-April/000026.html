@@ -1,0 +1,202 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.2 is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2007-April/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20ANNOUNCE%3A%20MondoRescue%202.2.2%20is%20now%20available&In-Reply-To=%3C20070419213237.GA15013%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000025.html">
+   <LINK REL="Next"  HREF="000027.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.2 is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20ANNOUNCE%3A%20MondoRescue%202.2.2%20is%20now%20available&In-Reply-To=%3C20070419213237.GA15013%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.2 is now available">bruno at victoria.frmug.org
+       </A><BR>
+    <I>Thu Apr 19 23:32:37 CEST 2007</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000025.html">[Mondorescue-announce] FreeBSD and mondorescue
+</A></li>
+        <LI>Next message: <A HREF="000027.html">[Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.3 is now available
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#26">[ date ]</a>
+              <a href="thread.html#26">[ thread ]</a>
+              <a href="subject.html#26">[ subject ]</a>
+              <a href="author.html#26">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>MondoRescue 2.2.2 is now available
+
+I'm happy to announce the availability of a newest version of mondorescue
+2.2.2. Enjoy it as usual!
+
+I'd like to underline especially some changes which impact you as Mondorescue
+users
+    For coherency, /var/log/mondoarchive.log is the new log file name
+    (previously was mondo-archive.log). It now includes mindi.log as well so we
+    will just need that file for debuging :-)
+
+    As well, /var/log/mondorestore.log is the new log file name for restoration
+    (under /tmp during the restore process). It's now different from the
+    previous one and is NOT appended to it anymore.
+
+    RHEL 5, Debian 4.0 (aka Etch) and Mandriva 2007.1 have now mondo packages.
+    The build process is now well in lace ;-)
+
+    initramfs is now supported (for FC5/6, Debian 3.1/4.0, ... as well as UUID
+    (I need Ubuntu users feedback)
+
+    Lots of bug fixes (mindi will never ever erase your /home again, -G option
+    for gzip will now work, ...)
+
+    all other details below...
+
+All in all should be a very stable version. The goal is now to only apply bug
+fixes to that branch (2.2.3 will be issued when a certain number of bugs have
+been corrected). Enhancements are definitely for the next main release. Now
+time to jump back to the future 3.x tree and break everything :-)
+
+Available at <A HREF="ftp://ftp.mondorescue.org/">ftp://ftp.mondorescue.org/</A>
+
+./slackware/11.0/mindi-1.2.2-i686-1mr.tgz ./slackware/11.0/
+mondo-2.2.2-i686-1mr.tgz ./fedora/4/mindi-1.2.2-1.fc4.i386.rpm ./fedora/4/
+mondo-2.2.2-1.fc4.i386.rpm ./fedora/5/mindi-1.2.2-1.fc5.i586.rpm ./fedora/5/
+mondo-2.2.2-1.fc5.i586.rpm ./fedora/6/mindi-1.2.2-1.fc6.i586.rpm ./fedora/6/
+mondo-2.2.2-1.fc6.i586.rpm ./gentoo/1.6/mindi-1.2.2.tbz2 ./gentoo/1.6/
+mondo-2.2.2.tbz2 ./gentoo/1.6/mindi-1.2.2.ebuild ./gentoo/1.6/
+mondo-2.2.2.ebuild ./mandrake/10.2/mindi-1.2.2-1.102mdk.i586.rpm ./mandrake/
+10.2/mondo-2.2.2-1.102mdk.i586.rpm ./mandrake/10.1/
+mindi-1.2.2-1.101mdk.i586.rpm ./mandrake/10.1/mondo-2.2.2-1.101mdk.i586.rpm ./
+mandriva/2006.0/mindi-1.2.2-1.20060mdv.i586.rpm ./mandriva/2006.0/
+mondo-2.2.2-1.20060mdv.i586.rpm ./mandriva/2007.0/
+mindi-1.2.2-1.20070mdv.i586.rpm ./mandriva/2007.0/
+mondo-2.2.2-1.20070mdv.i586.rpm ./mandriva/2007.1/
+mindi-1.2.2-1.20071mdv.i586.rpm ./mandriva/2007.1/
+mondo-2.2.2-1.20071mdv.i586.rpm ./redhat/7.3/mindi-1.2.2-1.rh73.i586.rpm ./
+redhat/7.3/mondo-2.2.2-1.rh73.i586.rpm ./redhat/9/mindi-1.2.2-1.rh9.i586.rpm ./
+redhat/9/mondo-2.2.2-1.rh9.i586.rpm ./rhel/3/mindi-1.2.2-1.rhel3.i586.rpm ./
+rhel/3/mondo-2.2.2-1.rhel3.i586.rpm ./rhel/4/mindi-1.2.2-1.rhel4.i586.rpm ./
+rhel/4/mondo-2.2.2-1.rhel4.i586.rpm ./rhel/4/mindi-1.2.2-1.rhel4.x86_64.rpm ./
+rhel/4/mondo-2.2.2-1.rhel4.x86_64.rpm ./rhel/5/mindi-1.2.2-1.rhel5.i586.rpm ./
+rhel/5/mondo-2.2.2-1.rhel5.i586.rpm ./sles/9/mindi-1.2.2-1.sles9.i586.rpm ./
+sles/9/mondo-2.2.2-1.sles9.i586.rpm ./sles/10/mindi-1.2.2-1.sles10.i586.rpm ./
+sles/10/mondo-2.2.2-1.sles10.i586.rpm ./src/mindi-1.2.2.tar.gz ./src/
+mindi-1.2.2.tar.bz2 ./src/mondo-2.2.2.tar.gz ./src/mondo-2.2.2.tar.bz2 ./suse/
+10.0/mindi-1.2.2-1.suse10.0.i586.rpm ./suse/10.0/
+mondo-2.2.2-1.suse10.0.i586.rpm ./suse/10.1/mindi-1.2.2-1.suse10.1.i586.rpm ./
+suse/10.1/mondo-2.2.2-1.suse10.1.i586.rpm ./suse/10.2/
+mindi-1.2.2-1.suse10.2.i586.rpm ./suse/10.2/mondo-2.2.2-1.suse10.2.i586.rpm
+
+As usual src.rpm packages are also available in the same directory.
+
+Changes are :
+
+MINDI CHANGES
+
+- Add support for adpahci (Proliant DL 140 G3 - SATA) (Abhijit Das/Bruno
+Cornec)
+- Mindi log file is now added to mondoarchive log file to ease debug (Bruno
+Cornec)
+- Suppress losetup usage in start-nfs (unreliable and doesn't work with QEMU
+(Bruno Cornec)
+- Fix a bug where losetup is called with only one parameter (#140) (Bruno
+Cornec)
+- Fix a bug on NFS in FC6 - fscache module needed (Bruno Cornec)
+- Add build support for Mandriva 2007.1, RREL 5 and Debian 4.0 (Bruno Cornec)
+- Fix a bug for FC6 where the boot disk size was again insufficient (Rene
+Ribaud/Bruno Cornec)
+- On CentOS 4.4 mdrun isn't available anymore so init should use mdadm instead
+(Momtchil Momtchev/Bruno Cornec)
+- Add the DENY_MODS variable in mindi allowing to describes modules that you
+don't want to include as part of the restore boot environment (HP Open Call
+OCMP e.g; needs it) (Bruno Cornec)
+- Add GetInitrdFilesystemToUse function to support initramfs type of initrd
+(SuSE 10.2/Debian 3.x/FC 6/...) (Andree Leidenfrost)
+- Fix a bug for ia64 in kernel reference in elilo.conf (Andree Leidenfrost)
+- Check that /boot/efi is mounted on ia64 (Andree Leidenfrost)
+- Protect some rm -rf to avoid raw removals (Bruno Cornec)
+- Better messages for analyze-my-lvm (Bruno Cornec)
+- Add support for newer Qlogic drivers (qla2300 &amp; 2400), mpt, dm and ohci
+(Josef Jetzinger/Bruno Cornec)
+- Fix a bug in mindi for the FAILSAFE support (Scott Cummings)
+- PATH fixed for init in restore (/usr/games added for petris) (Andree
+Leidenfrost)
+- Fiw a bug where restore failing because no archive files are found when -G is
+used (Andree Leidenfrost)
+- /media is now completely excluded as per StandardsCompliance (Bruno Cornec)
+
+
+MONDO CHANGES
+
+- Log files are now consistent: mondoarchive.log for mondoarchive (containing
+also mindi.log) and mondorestore.log for mondorestore (copied from /tmp (ram)
+to /var/log (disk) at the end of the restore) (Bruno Cornec)
+- Script label-partitions-as-necessary now works correctly for LABEL and UUID
+(Bruno Cornec)
+- Remove useless script compare-me (Bruno Cornec)
+- Some FreeBSD fixes (Bruno Cornec)
+- Fix a bug where losetup is called with only one parameter (#140) (Bruno
+Cornec)
+- Fix a core dumped when a Big file doesn't exist an can't be created (Nic
+Watson/Bruno Cornec)
+- support UUID in mondorestore (Fix #103) (Bruno Cornec)
+- Fix a bug in size computation for cciss and similar devices needing a p
+before their partition name (Bruno Cornec)
+- Fix 2 references to grep -x (Fix for #96) (Bruno Cornec)
+- Add build support for Mandriva 2007.1, RHEL 5 and Debian 4.0 (Bruno Cornec)
+- Handle no compression + verify correctly (Scott Cummings)
+- various HOWTO fixes (Mike Kinney)
+- Fix temporarily a bug when a biggiefile &gt; 32MB was compressed below the size
+of a slice (16MB) (Michel Loiseleur/Bruno Cornec)
+- Better module loading in insmod_crucial_modules (Andree Leidenfrost)
+- Improve Gentoo packaging (Linos)
+- Small typo fix for mondorestore man page (petes-bugs)
+- Small memory management improvements (Michel Loiseleur/Bruno Cornec)
+- Store NFS config only once (Bruno Cornec)
+- Fix a flaw in libmondo-mountlist.c (there since rev [1] !!) (Bruno Cornec)
+- Increased MAX_STR_LEN to 384 to make it divisible without remainder by eight
+for 64 bits platforms (Andree Leidenfrost)
+- Fix a bug where no bzip2 format file would be found when supporting gzip
+(Andy Wright)
+- CentOS fixes (Andy Wright)
+
+
+MINDI-BUSYBOX CHANGES
+
+- Improve Gentoo packaging (Linos)
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000025.html">[Mondorescue-announce] FreeBSD and mondorescue
+</A></li>
+	<LI>Next message: <A HREF="000027.html">[Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.3 is now available
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#26">[ date ]</a>
+              <a href="thread.html#26">[ thread ]</a>
+              <a href="subject.html#26">[ subject ]</a>
+              <a href="author.html#26">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

@@ -1,0 +1,217 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.5 is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2011-March/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%0A%092.2.9.5%20is%20now%20available&In-Reply-To=%3C20110312014821.573825CF%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.5 is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%0A%092.2.9.5%20is%20now%20available&In-Reply-To=%3C20110312014821.573825CF%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.5 is now available">bruno at mondorescue.org
+       </A><BR>
+    <I>Sat Mar 12 02:48:21 CET 2011</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#58">[ date ]</a>
+              <a href="thread.html#58">[ thread ]</a>
+              <a href="subject.html#58">[ subject ]</a>
+              <a href="author.html#58">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Project mondorescue version 2.2.9.5 is now available
+
+The project team is happy to announce the availability of a newest version of
+mondorescue 2.2.9.5. Enjoy it as usual!
+
+This version should better support Fedora 14, Debian 6 and RHEL 6 in particular
+for this last one some changes at LVM level. It also backports from 2.2.10 the
+dynamic allocation mode for excludes, so now the limit should be your machine's
+memory. Lots of small annoying bugs hve been fixed as reported below in more
+detail. It finally provides a new mindi-busybox version to solve issues met
+with tar crashing at restore time, and the new mindi is backward compatible
+with the older version as well.
+
+Now available at <A HREF="ftp://ftp.mondorescue.org">ftp://ftp.mondorescue.org</A>
+
+./gentoo/nover/mondo-2.2.9.5-r1.ebuild             ./gentoo/nover/mindi-2.0.7.6-r1.ebuild
+./suse/10.0/i386/mondo-2.2.9.5-1.suse10.0.i586.rpm ./fedora/9/i386/mondo-2.2.9.5-1.fc9.i386.rpm
+./fedora/9/x86_64/mondo-2.2.9.5-1.fc9.x86_64.rpm   ./fedora/8/i386/mondo-2.2.9.5-1.fc8.i386.rpm
+./fedora/8/x86_64/mondo-2.2.9.5-1.fc8.x86_64.rpm   ./fedora/6/x86_64/mondo-2.2.9.5-1.fc6.x86_64.rpm
+./fedora/11/i386/mondo-2.2.9.5-1.fc11.i586.rpm     ./fedora/11/x86_64/
+                                                   mondo-2.2.9.5-1.fc11.x86_64.rpm
+./fedora/14/i386/mondo-2.2.9.5-1.fc14.i386.rpm     ./fedora/14/x86_64/
+                                                   mondo-2.2.9.5-1.fc14.x86_64.rpm
+./fedora/10/i386/mondo-2.2.9.5-1.fc10.i386.rpm     ./fedora/10/x86_64/
+                                                   mondo-2.2.9.5-1.fc10.x86_64.rpm
+./fedora/13/i386/mondo-2.2.9.5-1.fc13.i386.rpm     ./fedora/13/x86_64/
+                                                   mondo-2.2.9.5-1.fc13.x86_64.rpm
+./fedora/12/i386/mondo-2.2.9.5-1.fc12.i386.rpm     ./fedora/12/x86_64/
+                                                   mondo-2.2.9.5-1.fc12.x86_64.rpm
+./fedora/5/i386/mondo-2.2.9.5-1.fc5.i386.rpm       ./fedora/7/i386/mondo-2.2.9.5-1.fc7.i386.rpm
+./fedora/7/x86_64/mondo-2.2.9.5-1.fc7.x86_64.rpm   ./asianux/2/x86_64/
+                                                   mondo-2.2.9.5-1.asx2.x86_64.rpm
+./sles/11/i386/mondo-2.2.9.5-1.sles11.i586.rpm     ./sles/11/x86_64/
+                                                   mondo-2.2.9.5-1.sles11.x86_64.rpm
+./sles/10/x86_64/mondo-2.2.9.5-1.sles10.x86_64.rpm ./debian/5.0/mondo_2.2.9.5-1_amd64.deb
+./debian/5.0/mindi_2.0.7.6-1_i386.deb              ./debian/5.0/mondo_2.2.9.5-1_i386.deb
+./debian/5.0/mindi_2.0.7.6-1_amd64.deb             ./debian/6.0/mondo_2.2.9.5-1_amd64.deb
+./debian/6.0/mindi_2.0.7.6-1_i386.deb              ./debian/6.0/mondo_2.2.9.5-1_i386.deb
+./debian/6.0/mindi_2.0.7.6-1_amd64.deb             ./debian/4.0/mondo_2.2.9.5-1_amd64.deb
+./debian/4.0/mindi_2.0.7.6-1_i386.deb              ./debian/4.0/mondo_2.2.9.5-1_i386.deb
+./debian/4.0/mindi_2.0.7.6-1_amd64.deb             ./ubuntu/6.06/mindi_2.0.7.6-1_i386.deb
+./ubuntu/6.06/mondo_2.2.9.5-1_i386.deb             ./ubuntu/10.10/mondo_2.2.9.5-1_amd64.deb
+./ubuntu/10.10/mindi_2.0.7.6-1_i386.deb            ./ubuntu/10.10/mondo_2.2.9.5-1_i386.deb
+./ubuntu/10.10/mindi_2.0.7.6-1_amd64.deb           ./ubuntu/7.04/mondo_2.2.9.5-1_amd64.deb
+./ubuntu/7.04/mindi_2.0.7.6-1_i386.deb             ./ubuntu/7.04/mondo_2.2.9.5-1_i386.deb
+./ubuntu/7.04/mindi_2.0.7.6-1_amd64.deb            ./ubuntu/9.04/mindi_2.0.7.6-1_i386.deb
+./ubuntu/9.04/mondo_2.2.9.5-1_i386.deb             ./ubuntu/8.04/mondo_2.2.9.5-1_amd64.deb
+./ubuntu/8.04/mindi_2.0.7.6-1_i386.deb             ./ubuntu/8.04/mondo_2.2.9.5-1_i386.deb
+./ubuntu/8.04/mindi_2.0.7.6-1_amd64.deb            ./ubuntu/9.10/mondo_2.2.9.5-1_amd64.deb
+./ubuntu/9.10/mindi_2.0.7.6-1_i386.deb             ./ubuntu/9.10/mondo_2.2.9.5-1_i386.deb
+./ubuntu/9.10/mindi_2.0.7.6-1_amd64.deb            ./ubuntu/8.10/mondo_2.2.9.5-1_amd64.deb
+./ubuntu/8.10/mindi_2.0.7.6-1_i386.deb             ./ubuntu/8.10/mondo_2.2.9.5-1_i386.deb
+./ubuntu/10.04/mondo_2.2.9.5-1_amd64.deb           ./ubuntu/10.04/mindi_2.0.7.6-1_i386.deb
+./ubuntu/10.04/mondo_2.2.9.5-1_i386.deb            ./ubuntu/10.04/mindi_2.0.7.6-1_amd64.deb
+./ubuntu/7.10/mondo_2.2.9.5-1_amd64.deb            ./ubuntu/7.10/mindi_2.0.7.6-1_i386.deb
+./ubuntu/7.10/mondo_2.2.9.5-1_i386.deb             ./ubuntu/7.10/mindi_2.0.7.6-1_amd64.deb
+./opensuse/11.2/i386/                              ./opensuse/11.2/x86_64/
+mondo-2.2.9.5-1.opensuse11.2.i586.rpm              mondo-2.2.9.5-1.opensuse11.2.x86_64.rpm
+./opensuse/11.1/i386/                              ./opensuse/11.3/i386/
+mondo-2.2.9.5-1.opensuse11.1.i586.rpm              mondo-2.2.9.5-1.opensuse11.3.i586.rpm
+./opensuse/11.3/x86_64/                            ./mandriva/2010.1/i386/
+mondo-2.2.9.5-1.opensuse11.3.x86_64.rpm            mondo-2.2.9.5-1.mdv2010.1.i586.rpm
+./mandriva/2010.1/x86_64/                          ./mandriva/2008.0/i386/
+mondo-2.2.9.5-1.mdv2010.1.x86_64.rpm               mondo-2.2.9.5-1.mdv2008.0.i586.rpm
+./mandriva/2008.0/x86_64/                          ./mandriva/2008.1/i386/
+mondo-2.2.9.5-1.mdv2008.0.x86_64.rpm               mondo-2.2.9.5-1.mdv2008.1.i586.rpm
+./mandriva/2008.1/x86_64/                          ./rhel/4/x86_64/mondo-2.2.9.5-1.rhel4.x86_64.rpm
+mondo-2.2.9.5-1.mdv2008.1.x86_64.rpm
+./rhel/6/i386/mondo-2.2.9.5-1.rhel6.i386.rpm       ./rhel/6/x86_64/mondo-2.2.9.5-1.rhel6.x86_64.rpm
+./rhel/5/x86_64/mondo-2.2.9.5-1.rhel5.x86_64.rpm   ./rhel/3/x86_64/mondo-2.2.9.5-1.rhel3.x86_64.rpm
+
+As usual source packages are also available in the same directory.
+
+Changes are :
+
+MINDI-BUSYBOX CHANGES
+
+- Updated based on busybox 1.18.3 to solve tar issues with latest RHEL 6 e.g.
+(Bruno Cornec)
+
+MINDI CHANGES
+
+- Adds functions and /bin/loadkeys (new location) to minimal set of commands to
+have (Bruno Cornec)
+- provides a makemessage option to mindi and this function now works with
+pbdistrocheck (Bruno Cornec)
+- Latest lvdisplay on RHEL6 prints MiB instead of MB. Impact on analyze-my-lvm
+fixed. (Bruno Cornec)
+- With mindi-busybox 1.18.3 the syntax of openvt changed. Mindi is now
+compatible with this as well as the older one. (Bruno Cornec)
+- Adds a restore quiet option (Bruno Cornec)
+- Fixes for RHEL6 support with additional modules (Bruno Cornec)
+- Fix #462 (removes temp dir if analyze-my-lvm launched in stand alone mode)
+(Bruno Cornec)
+- Fix issue with mindi when launched from a dir containing spaces (Bruno
+Cornec)
+- Fix #459 by correcting an old README containing info on the edit-mountlist
+binary which doesn't exist. (Bruno Cornec)
+- Adds support for hpsa (new HP Smart Array driver), r8169, xhci, virtio,
+mega_sr, ide_gd_mod, pata_jmicron, cp210x, dca, raid6_pq, xor async_tx,
+async_memcpy, async_xor, pata_sil680 drivers (Bruno Cornec)
+- Replace usage of pvs with pvscan for speed reasons in analyze-my-lvm (Bruno
+Cornec)
+- Workaround problems met on RHEL 5.2 and 5.4 around pvs command generating a
+list of \n separated pvs with back quotes in an unexpected way. (Bruno Cornec)
+- Adds /etc/rpc and /etc/netconfig as minimal deps for mindi for latest NFS
+support (Bruno Cornec)
+- Boot size and extra size pushed to 24MB and 70MB to support correctly Fedora
+14 and Debian 6.0 (Bruno Cornec)
+- Fix #446 by exiting mindi before doing anything weird in it (Bruno Cornec)
+- Fix #445 to avoid vg with similar names to be wrongly excluded (vgroot and
+vgroot-san e.g.) (Michael Shapiro/Bruno Cornec)
+- Fix #426 by rewriting Xen kernel support to use TryToFindKernelPath
+systematically (Bruno Cornec)
+- mindi now copies also the /lib/firmware content in order to have it for
+drivers needing it (bnx2 reported) (Bruno Cornec)
+- Fix #434 by really testing thet udevd is not running already (chucky)
+- mindi is now able to handle compressed kernel with .gz or .bz2 suffix (case
+of OpenSuSE 11.2) (Bruno Cornec)
+
+MONDO-DOC CHANGES
+
+- Document in man page and HOWTO the syntax modifications for -E/-I options and
+'|' separator
+- Adds the mondoarchive reference card (Lester Wade)
+- Updated P2V doc from Lester Wade (Lester Wade)
+
+MONDO CHANGES
+
+- Do not create an error when a phys device has 0 size and is a /dev/dm-*
+device (Bruno Cornec)
+- Excluding vmhgfs FS for VMWare guests mounting areas of the host. (Bruno
+Cornec)
+- Fix #444. mondoarchive now supports inclusion/exclusion of dirs with spaces
+in their name. this required a syntax change for the -E/-I options where the
+list of dirs needs to be separated by '|' now instead of ' '. (Bruno Cornec)
+- Fix a bug when no -E option is given on CLI (null) string generated (Bruno
+Cornec)
+- Backport from 2.2.10 the support of a dynamic exclude_path variable. Should
+help fix #366, #421, #368, #371, #443 (Bruno Cornec)
+- Exits if the protocol used is not recognized (error with -n <A HREF="fs://">fs://</A> typo)
+(Bruno Cornec)
+- Fix a bug on exclusion of path with common content (/home and /path/home
+e.g.) which was handled correctly only in a certain order (John Pearson)
+- mount-media function is now placed in libmondo-devices.c as used by more
+programs. (Bruno Cornec)
+- Avoids calling mount_media when it's not mandatory (change the way
+mondorestore was working up to now but could solve some bugs reported) (Bruno
+Cornec)
+- Fix #412 by using grub.unsupported correctly before grub-install as both
+exist on opensuse 11.2 (Bruno Cornec)
+- Try to provide a workaround in code to the #401 (over-allocation of space due
+to rounding errors) (Bruno Cornec)
+- Fix a bug when using ACLs and file with spaces in their names by adding
+double quotes in getfacl invocation (Tom Mortell)
+- Attempt to fix problem of slowdown in filelist creation by re-introducing a
+limit to the find command (Bruno Cornec)
+- Improves logging for external binary (Bruno Cornec)
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#58">[ date ]</a>
+              <a href="thread.html#58">[ thread ]</a>
+              <a href="subject.html#58">[ subject ]</a>
+              <a href="author.html#58">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

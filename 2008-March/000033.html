@@ -1,0 +1,286 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.5 is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2008-March/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20ANNOUNCE%3A%20MondoRescue%202.2.5%20is%20now%20available&In-Reply-To=%3C20080325090829.GA24518%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.5 is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20ANNOUNCE%3A%20MondoRescue%202.2.5%20is%20now%20available&In-Reply-To=%3C20080325090829.GA24518%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] ANNOUNCE: MondoRescue 2.2.5 is now available">bruno at victoria.frmug.org
+       </A><BR>
+    <I>Tue Mar 25 10:08:29 CET 2008</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#33">[ date ]</a>
+              <a href="thread.html#33">[ thread ]</a>
+              <a href="subject.html#33">[ subject ]</a>
+              <a href="author.html#33">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>MondoRescue 2.2.5 is now available
+
+I'm happy to announce the availability of a newest version of mondorescue
+2.2.5.
+
+It's been a long time since tha last release, and the list of modifications
+below will show that it has been a hopefully fruitful time. I want to underline
+that mindi has now reached version 2.0.0. Which means it may not be completely
+stable yet. However mondo 2.2.5 needs it, so this is the way to go. Successful
+tests have been done on RHEL and Ubuntu, so it shouldn't be completely wrong ;
+-). THhe major news I want to underline are :
+
+  &#8226; No more physical floppy support. Kernel + initrd/ramfs do not deal weel
+    with it anyway nowadays. For those who still wants it, 2.2.4 is the last
+    version providing support.
+  &#8226; New USB Key/Disk support. Use it, it's way quicker than floppy ;-), and
+    even sometimes CD. Genoo integration. Thanks to Wolfram Schlich for that.
+    Please Wolfram needs testers, so you gentoo users give it a try.
+  &#8226; Fedora 8 and Ubuntu 7.10 packages are now built in addition to the already
+    20 distros supported. Ubuntu 7.10 has been particularly tested and should
+    really work better now, including UUID fstab.
+  &#8226; A new build process (again !) based on a new project I'm leading (<A HREF="http://">http://</A>
+    trac.project-builder.org) has also been put in place for this version.
+  &#8226; Itanium support is officially part of this version (tested on RHEL4 at the
+    moment). Please report feedback for other distributions such as RHEL5,
+    SLES10, Debian 4.0. Packages for RHEL4 will be made today.
+  &#8226; Provides improved support for Proliant server by allowing to save and
+    restore the hardware setup of the systems (BIOS, iLO and SmartArray
+    configurations with the help of SSSTK tools). Ideal for cloning. Also iLO
+    are systematically supported in mindi, making it easier to restore with
+    Virtual media.
+
+So lots of stuff, and as usual many bugs fixed, and probably some others added.
+Please report on <A HREF="http://trac.mondorescue.org">http://trac.mondorescue.org</A>
+
+Enjoy and share !
+
+Now available at <A HREF="ftp://ftp.mondorescue.org/">ftp://ftp.mondorescue.org/</A>
+
+./fedora/4/mindi-2.0.0-1.fc4.i386.rpm ./fedora/4/
+mindi-busybox-1.7.3-1.fc4.i386.rpm ./fedora/4/mondo-2.2.5-1.fc4.i386.rpm ./
+fedora/5/mindi-2.0.0-1.fc5.i386.rpm ./fedora/5/
+mindi-busybox-1.7.3-1.fc5.i386.rpm ./fedora/5/mondo-2.2.5-1.fc5.i386.rpm ./
+fedora/6/mindi-2.0.0-1.fc6.i386.rpm ./fedora/6/mindi-2.0.0-1.fc6.x86_64.rpm ./
+fedora/6/mindi-busybox-1.7.3-1.fc6.i386.rpm ./fedora/6/
+mindi-busybox-1.7.3-1.fc6.x86_64.rpm ./fedora/6/mondo-2.2.5-1.fc6.i386.rpm ./
+fedora/6/mondo-2.2.5-1.fc6.x86_64.rpm ./fedora/7/mindi-2.0.0-1.fc7.i386.rpm ./
+fedora/7/mindi-2.0.0-1.fc7.x86_64.rpm ./fedora/7/
+mindi-busybox-1.7.3-1.fc7.i386.rpm ./fedora/7/
+mindi-busybox-1.7.3-1.fc7.x86_64.rpm ./fedora/7/mondo-2.2.5-1.fc7.i386.rpm ./
+fedora/7/mondo-2.2.5-1.fc7.x86_64.rpm ./fedora/8/mindi-2.0.0-1.fc8.i386.rpm ./
+fedora/8/mindi-2.0.0-1.fc8.x86_64.rpm ./fedora/8/
+mindi-busybox-1.7.3-1.fc8.i386.rpm ./fedora/8/
+mindi-busybox-1.7.3-1.fc8.x86_64.rpm ./fedora/8/mondo-2.2.5-1.fc8.i386.rpm ./
+fedora/8/mondo-2.2.5-1.fc8.x86_64.rpm ./mandrake/10.1/
+mindi-2.0.0-1.mdk101.i586.rpm ./mandrake/10.1/
+mindi-busybox-1.7.3-1.mdk101.i586.rpm ./mandrake/10.1/
+mondo-2.2.5-1.mdk101.i586.rpm ./mandrake/10.2/mindi-2.0.0-1.mdk102.i586.rpm ./
+mandrake/10.2/mindi-busybox-1.7.3-1.mdk102.i586.rpm ./mandrake/10.2/
+mondo-2.2.5-1.mdk102.i586.rpm ./mandriva/2006.0/
+mindi-2.0.0-1.mdv2006.0.i586.rpm ./mandriva/2006.0/
+mindi-busybox-1.7.3-1.mdv2006.0.i586.rpm ./mandriva/2006.0/
+mondo-2.2.5-1.mdv2006.0.i586.rpm ./mandriva/2007.0/
+mindi-2.0.0-1.mdv2007.0.i586.rpm ./mandriva/2007.0/
+mindi-2.0.0-1.mdv2007.0.x86_64.rpm ./mandriva/2007.0/
+mindi-busybox-1.7.3-1.mdv2007.0.i586.rpm ./mandriva/2007.0/
+mindi-busybox-1.7.3-1.mdv2007.0.x86_64.rpm ./mandriva/2007.0/
+mondo-2.2.5-1.mdv2007.0.i586.rpm ./mandriva/2007.0/
+mondo-2.2.5-1.mdv2007.0.x86_64.rpm ./mandriva/2007.1/
+mindi-2.0.0-1.mdv2007.1.i586.rpm ./mandriva/2007.1/
+mindi-2.0.0-1.mdv2007.1.x86_64.rpm ./mandriva/2007.1/
+mindi-busybox-1.7.3-1.mdv2007.1.i586.rpm ./mandriva/2007.1/
+mindi-busybox-1.7.3-1.mdv2007.1.x86_64.rpm ./mandriva/2007.1/
+mondo-2.2.5-1.mdv2007.1.i586.rpm ./mandriva/2007.1/
+mondo-2.2.5-1.mdv2007.1.x86_64.rpm ./mandriva/2008.0/
+mindi-2.0.0-1.mdv2008.0.i586.rpm ./mandriva/2008.0/
+mindi-2.0.0-1.mdv2008.0.x86_64.rpm ./mandriva/2008.0/
+mindi-busybox-1.7.3-1.mdv2008.0.i586.rpm ./mandriva/2008.0/
+mindi-busybox-1.7.3-1.mdv2008.0.x86_64.rpm ./mandriva/2008.0/
+mondo-2.2.5-1.mdv2008.0.i586.rpm ./mandriva/2008.0/
+mondo-2.2.5-1.mdv2008.0.x86_64.rpm ./redhat/7.3/mindi-2.0.0-1.rh73.i386.rpm ./
+redhat/7.3/mindi-busybox-1.7.3-1.rh73.i386.rpm ./redhat/7.3/
+mondo-2.2.5-1.rh73.i386.rpm ./redhat/9/mindi-2.0.0-1.rh9.i386.rpm ./redhat/9/
+mindi-busybox-1.7.3-1.rh9.i386.rpm ./redhat/9/mondo-2.2.5-1.rh9.i386.rpm ./rhel
+/3/mindi-2.0.0-1.rhel3.i386.rpm ./rhel/3/mindi-busybox-1.7.3-1.rhel3.i386.rpm .
+/rhel/3/mondo-2.2.5-1.rhel3.i386.rpm ./rhel/4/mindi-2.0.0-1.rhel4.i386.rpm ./
+rhel/4/mindi-2.0.0-1.rhel4.x86_64.rpm ./rhel/4/
+mindi-busybox-1.7.3-1.rhel4.i386.rpm ./rhel/4/
+mindi-busybox-1.7.3-1.rhel4.x86_64.rpm ./rhel/4/mondo-2.2.5-1.rhel4.i386.rpm ./
+rhel/4/mondo-2.2.5-1.rhel4.x86_64.rpm ./rhel/5/mindi-2.0.0-1.rhel5.i386.rpm ./
+rhel/5/mindi-2.0.0-1.rhel5.x86_64.rpm ./rhel/5/
+mindi-busybox-1.7.3-1.rhel5.i386.rpm ./rhel/5/
+mindi-busybox-1.7.3-1.rhel5.x86_64.rpm ./rhel/5/mondo-2.2.5-1.rhel5.i386.rpm ./
+rhel/5/mondo-2.2.5-1.rhel5.x86_64.rpm ./sles/10/mindi-2.0.0-1.sles10.i586.rpm .
+/sles/10/mindi-busybox-1.7.3-1.sles10.i586.rpm ./sles/10/
+mondo-2.2.5-1.sles10.i586.rpm ./sles/9/mindi-2.0.0-1.sles9.i586.rpm ./sles/9/
+mindi-busybox-1.7.3-1.sles9.i586.rpm ./sles/9/mondo-2.2.5-1.sles9.i586.rpm ./
+src/mindi-2.0.0.tar.gz ./src/mindi-busybox-1.7.3.tar.gz ./src/
+mondo-2.2.5.tar.gz ./suse/10.0/mindi-2.0.0-1.suse10.0.i586.rpm ./suse/10.0/
+mindi-busybox-1.7.3-1.suse10.0.i586.rpm ./suse/10.0/
+mondo-2.2.5-1.suse10.0.i586.rpm ./suse/10.1/mindi-2.0.0-1.suse10.1.i586.rpm ./
+suse/10.1/mindi-busybox-1.7.3-1.suse10.1.i586.rpm ./suse/10.1/
+mondo-2.2.5-1.suse10.1.i586.rpm ./suse/10.2/mindi-2.0.0-1.suse10.2.i586.rpm ./
+suse/10.2/mindi-2.0.0-1.suse10.2.x86_64.rpm ./suse/10.2/
+mindi-busybox-1.7.3-1.suse10.2.i586.rpm ./suse/10.2/
+mindi-busybox-1.7.3-1.suse10.2.x86_64.rpm ./suse/10.2/
+mondo-2.2.5-1.suse10.2.i586.rpm ./suse/10.2/mondo-2.2.5-1.suse10.2.x86_64.rpm .
+/suse/10.3/mindi-2.0.0-1.suse10.3.i586.rpm ./suse/10.3/
+mindi-2.0.0-1.suse10.3.x86_64.rpm ./suse/10.3/
+mindi-busybox-1.7.3-1.suse10.3.i586.rpm ./suse/10.3/
+mindi-busybox-1.7.3-1.suse10.3.x86_64.rpm ./suse/10.3/
+mondo-2.2.5-1.suse10.3.i586.rpm ./suse/10.3/mondo-2.2.5-1.suse10.3.x86_64.rpm
+
+As usual src.rpm packages are also available in the same directory.
+
+Full Changes are :
+
+MONDO CHANGES 2.2.5 (2008-03-22) - Remove floppy support from mondo (Bruno
+Cornec) - mondoarchive now really excludes /tmp by default (Bill R. Williams) -
+Postpone removal of tmpdir to avoid error messages at end (Bruno Cornec) -
+Replace some sprintf by asprintf, searching for a core dumped bug at restore
+time (Bruno Cornec) - Gentoo ebuild fixes Cf: <A HREF="http://bugs.gentoo.org/">http://bugs.gentoo.org/</A>
+show_bug.cgi?id=176738 (Francesco Talamona) - Adds the possibility to increase
+debug level at restore time with a -K option (Bruno Cornec) - Fix BigFile
+support when one bigfile is deleted during the archiving (Bruno Cornec) - Fix
+NFS mount problem (Bruno Cornec) - Removal of locate usage completely from code
+to use find (Bruno Cornec) - Never tries to eject a NFS media (Brian McKee) -
+Only ask for size in NFS mode at backup time (Brian McKee) - Adds support for
+alb/aft types of bonding on Intel cards (Mark Pinkerton) - Adds Fedora 8 and
+Ubuntu 7.10 build support (Bruno Cornec) - Do not mount /boot if it's already
+mounted - avoids ESX hang (Bruno Cornec) - Use RESTORE consistently across
+mondo to restore without interaction (Takeshi Shoji/Bruno Cornec) - Remove
+dummy file created on NFS (Arnaud Tiger/Bruno Cornec) - Adds full UUID support,
+especially with Ubuntu 7.10 (Bruno Cornec) - Create MONDO_CACHE and use it
+everywhere + creation at start (Bruno Cornec) - Add USB Key button to Menu UI
+(CD streamer removed) (Bruno Cornec) - Add USB disk/key support (Bruno Cornec)
+- Attempt to fix error messages on tmp/scratch files at the end by removing
+those dir at the latest possible (Bruno Cornec) - Fix a bug linked to the size
+of the -E param which could be used (Arnaud Tiger/Ren&#233; Ribaud) - Build process
+adapted to use pb <A HREF="http://trac.project-builder.org">http://trac.project-builder.org</A> (Bruno Cornec) - Fix #137 and
+#3 issue with large exclude list (&gt; 1000 chars) (Bruno Cornec) - Fix #191
+edition of mountlist in compare mode (Bruno Cornec) - Fix partially #197 count
+deleted files in compare (Scott Cummings/Bruno Cornec) - Fix some some valgrind
+errors (Bruno Cornec) - Fix a bug where df was using locale to print messages
+and wasn't filtered correctly (Bruno Cornec) - Add mkdtemp checked in configure
+(Bruno Cornec) - reset_bkpinfo creates a tmpdir with mkdtemp in setup_tmpdir,
+takes in account TMPDIR and TMP (Bruno Cornec) - Render bkpinfo global (Bruno
+Cornec) - Use bkpinfo-&gt;tmpdir instead of /tmp or MINDI_CACHE when appropriate
+to fix security issues (Andree Leidenfrost/Bruno Cornec) - replace vi with
+find_my_editor during restore (Andree Leidenfrost) - Fix #195 broken Compare
+with gzip (Scott Cummings) - Fix #194 automatically rebooting at the end of PXE
+restore process (Bruno Cornec) - Fix #190 mondo-restore replaced by
+mondorestore (veelo) - /tmp =&gt; /var/log for mondorestore.log (Bruno Cornec) -
+Fix gentoo issues again (Francesco Talamona) - Fix #187 Non-matching file list
+doesn't work in GUI mode in Compare mode (Scott Cummings) - Fix a bug in
+interactive mode on ia64 where lilo wasn't forced (Bruno Cornec) - Add support
+of Debian ia64 (Bruno Cornec) - Improve ia64 support for SLES (Bruno Cornec) -
+Fix #179 core dump (Bruno Cornec) - Add the possibiilty to edit in interactive
+mode mtab and device.map for grub (Bruno Cornec) - Remove blkid cache files
+after restore to avoid problems in cloning mode (Bruno Cornec) - Fix #185 buggy
+hack-fstab for LABEL and UUID support (Bruno Cornec)
+
+MINDI CHANGES 2.0.0 (2008-03-22) - Fix #172 kernel panic during restore (Angelo
+Pozzi) - Remove floppy support from mindi (Bruno Cornec) - Align more mindi
+with the version from stable (Bruno Cornec) - ReadAllLink rewritten again to
+fix bug reports on ML (Bruno Cornec) - Improved dmidecode error handling (Bruno
+Cornec) - More logs on dependencies computation to help debug (Bruno Cornec) -
+Try to overcome OpenSuSE stupidity in fstab format (Bruno Cornec) - mindi now
+logs FORCE|DENY_MODS variables (Bruno Cornec) - Fix lack of /etc/raidtab at
+restore rime in the right place (Dirk Husung) - Add efibootmgr to deplist.txt
+in order to be able to modify EFI menu at restore time on ia64 (Bruno Cornec) -
+Adds support for nls_utf8 and pata_serverworks (Dirk Husung) - Fix an issue on
+parted output (K instead of KB) in parted2fdisk at restore time (Bruno Cornec)
+- Add support for hardware backup/restore on Proliant (Bruno Cornec) - Add boot
+option denymods to avoid loading some modules (Bruno Cornec) - iLO Virtual
+media is systematically available at restore time (Bruno Cornec) - Adds udev
+support and modprobe at restore time (Bruno Cornec) - Build process adapted to
+use pb <A HREF="http://trac.project-builder.org">http://trac.project-builder.org</A> (Bruno Cornec) - Increase BOOT_SIZE and
+EXTRA_SIZE to support features such as HW recovery (Bruno Cornec) - Adds
+support for nohw boot option to avoid re-setuping the HW conf (Bruno Cornec) -
+Fix #215 mindi does not find failsafe kernel's modules (Bruno Cornec) - Fix #
+214 mindi ignores FAILSAFE kernel choice (xdelaruelle) - parted2fdisk binary
+replaced by the perl version at restore time on ia64 (Bruno Cornec) - For all
+modules supported, create symlinks under the mountpoint to the traditional
+kernel place where they are (Bruno Cornec) - Fix NICs renumbering on Debian at
+least (Bruno Cornec) - Load USB earlier in order to support KBD such as with
+iLO (Bruno Cornec) - Fix mindi for Debian x86_64 where /lib64 is a link (Bruno
+Cornec) - Fix issue at restore time for ext2fs params not reused (Klaus Ade
+Johnstad) - Fix modes on mindi-bkphw (Phil Walker) - Use RESTORE consistently
+across mondo to restore without interaction (Takeshi Shoji/Bruno Cornec) - perl
+is now required at restore time to support uuid swap partitions (Bruno Cornec)
+- Small optimization in mindi on keyboard handling (one single find instead of
+multiple) (Bruno Cornec) - Automatically guess block disk size for ramdisk
+(Bruno Cornec) - Adds full UUID support especially on Ubuntu 7.10 (Bruno
+Cornec) - Adds magic file to deplist in order to have file working + ldd and
+strace (Bruno Cornec) - Adds USB disk/key support (Bruno Cornec) - On ia64
+elilo.efi is now searched throughout /boot/efi and not in a fixed place as
+there is no standard (Bruno Cornec) - Suppress useless softlinks creation/
+removal in boot process (Bruno Cornec) - Increase # of disks to 99 as in mindi
+at restore time (Bruno Cornec) - Fix a bug in supporting OpenSusE 10.3 kernel
+for initramfs (Bruno Cornec) - Exclusion of modules denied now works (Bruno
+Cornec) - Handles dynamically linked busybox/udev/... (Bruno Cornec) - Improve
+Ubuntu/Debian keyboard detection and support (Bruno Cornec) - Install
+isolinux.cfg correctly (Bruno Cornec) - Adaptation of build process to pb http:
+//trac.project-builder.org (Bruno Cornec) - Really Fix #163 support for 3w-9xxx
+3w_9xxx (Bruno Cornec) - /tmp =&gt; /var/log for mondorestore.log (Bruno Cornec) -
+Update linux terminfo to fix a color issue (Andree Leidenfrost) - Add
+nsswitch.conf to deplist (Zach&#225;r Bal&#225;zs) - Add mdadm.conf to deplist (Bruno
+Cornec) - Fix #194 automatically rebooting at the end of PXE restore process
+(Bruno Cornec) - Fix #190 mondo-restore replaced by mondorestore (veelo) - Fix
+#189 older mdadm support (Mark Nienberg) - Add a MAX_DISKS variable and
+increase to 99 (Tilman Schmidt/Bruno Cornec) - Add support of pata_marvell
+module (Tilman Schmidt) - Add support of pata_amd module (Andy Wright) - Fix
+gentoo issues again (Francesco Talamona) - Fix a bug in interactive mode on
+ia64 where lilo wasn't forced (Bruno Cornec) - Fix mindi iso build for ia64
+(Bruno Cornec) - Add support for gzip compressed kernel - ia64 SLES 10 is in
+that category (Bruno Cornec) - arch =&gt; uname -m everywhere (Bruno Cornec) -
+parted2fdisk adapted for parted differences on SLES 10 ia64 (Bruno Cornec) -
+reiserfs support added for parted2fdisk (Bruno Cornec) - decode_Bsuf function
+added for parted2fdisk (Bruno Cornec) - README.ia64 improved for SLES 10 (Bruno
+Cornec)
+
+MINDI-BUSYBOX CHANGES 1.7.3-1 (2008-03-22) - Updated based on busybox 1.7.3
+(Bruno Cornec) - Fix gentoo installation issue (Francesco Talamona/Bruno
+Cornec) - remove MONOTONIC clock to continue to support 2.4 kernels (RHEL 3
+e.g. or ESX) (Bruno Cornec) - Adds dd support for swap partition label (Bruno
+Cornec) - Try to add cttyhack to suppress an error message at shell level
+(Bruno Cornec)
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#33">[ date ]</a>
+              <a href="thread.html#33">[ thread ]</a>
+              <a href="subject.html#33">[ subject ]</a>
+              <a href="author.html#33">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

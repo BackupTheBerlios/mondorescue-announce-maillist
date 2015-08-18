@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] [ANNOUNCE] mondo 2.0.7 / mindi 1.0.7 available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2006-March/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20mondo%202.0.7%20/%20mindi%201.0.7%20available&In-Reply-To=%3C20060320171111.GA20865%40morley.grenoble.hp.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] [ANNOUNCE] mondo 2.0.7 / mindi 1.0.7 available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20mondo%202.0.7%20/%20mindi%201.0.7%20available&In-Reply-To=%3C20060320171111.GA20865%40morley.grenoble.hp.com%3E"
+       TITLE="[Mondorescue-announce] [ANNOUNCE] mondo 2.0.7 / mindi 1.0.7 available">Bruno.Cornec at hp.com
+       </A><BR>
+    <I>Mon Mar 20 18:11:11 CET 2006</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>[Warning: Reply-To positionned to <A HREF="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">mondo-devel at lists.sourceforge.net</A>]
+
+Hello,
+
+I'm happy to announce the availability of the latest and greatest
+version of mondo 2.0.7 / mindi 1.0.7. Version numbers have changed of
+format to be more in line with what is done generally (x.y.z)
+
+Now available at <A HREF="ftp://ftp.berlios.de/pub/mondorescue">ftp://ftp.berlios.de/pub/mondorescue</A> :
+
+mandrake/10.1/mindi-1.0.7-447.101mdk.i386.rpm
+mandrake/10.1/mondo-2.0.7-447.101mdk.i386.rpm
+mandrake/10.2/mindi-1.0.7-447.102mdk.i386.rpm
+mandrake/10.2/mondo-2.0.7-447.102mdk.i386.rpm
+mandriva/2006.0/mindi-1.0.7-447.20060mdk.i386.rpm
+mandriva/2006.0/mondo-2.0.7-447.20060mdk.i386.rpm
+src/mindi-1.0.7-r447.tgz
+src/mondo-2.0.7-r447.tgz
+
+Other distributions will follow asap (should be able to produce soon
+redhat 7.3, fedora core 4, and only after rhel3/4 and sles9) due to the
+change in the virtual machines I have to do (now using qemu + more tools
+to generate RPMs)
+
+The focus on this version has been more around the new website and 
+documentation, and a bit less on code. So some persistant bugs are still 
+not corrected (some dvd burning issues and dm/lvm2 support mainly) and 
+will be hopefully in 2.0.8.
+
+MONDO CHANGES
+
+v2.07 (2006-02-23)
+- useless cat, sort|uniq commands removed
+  (Bruno Cornec/S&#233;bastien Aperghis-Tramoni)
+- Doc cleanup (Andree Leidenfrost)
+- Add the actual format to messages after calls to function
+  is_this_a_valid_disk_format() about unsupported formats.
+  (Andree Leidenfrost)
+- Abort|Warn when one of the include|exclude dirs (-I|-E) does not exist
+  (Bruno Cornec/Jeffs)
+- Replaced partimagehack with ntfsclone from ntfsprogs package.
+  (Andree Leidenfrost)
+- use df -P everywhere (Bruno Cornec)
+- Paypal incitations removed (Andree Leidenfrost)
+- mondo now uses /usr/share for the restore-scripts (Bruno Cornec)
+- rpmlint cleanups (Bruno Cornec)
+- no shared librairies and no X11 anymore (were useless) (Bruno Cornec)
+- files &gt; 2GB are now really supported (Andree Leidenfrost)
+- new SGML based Mondo Rescue documentation + new Web site
+  (Bruno Cornec/Andree Leidenfrost)
+- mondoarchive aborts when 'mindi --findkernel' gives a fatal error (See
+  also Debian bug #352323.) (Andree Leidenfrost
+)
+- /tmp not excluded anymore from backup (Bruno Cornec)
+- New RPM Build environement (Bruno Cornec)
+
+MINDI CHANGES
+
+1.07 (2006-02-23)
+- stop creating further size of floppy disks if the smaller one succeeds
+  (Bruno Cornec)
+- init revamped (removed unnecessary second general module loading
+  phase,
+  start NFS appropriately depending on PXE or simple NFS)
+  (Andree Leidenfrost)
+- Changed module 'nfsacl' to 'nfs_acl' (Andree Leidenfrost)
+- Mindi/DiskSize is gone (Bruno Cornec)
+- useless cat, sort|uniq commands removed
+  (Bruno Cornec/S&#233;bastien Aperghis-Tramoni)
+- Doc cleanup (Andree Leidenfrost)
+- Bug fix for chown in install.sh (JeffS)
+- CHANGES renamed also in install.sh now (Bruno Cornec)
+- rpmlint cleanups
+- Get mindi to look for analyze-my-lvm in it's library directory
+  MINDI_LIB (See also Debian bug #351446.)
+- mindi only deletes freshly created 1440kb images in case of error (See
+  also Debian Bug #348966.)
+  (Andree Leidenfrost)
+- try standard grub-install in grub-MR restore script before trying
+  anything fancy
+  (Andree Leidenfrost)
+- busybox mount should be called with -o ro for PXE (Make RHEL 3 works
+  in PXE with a 2.6 failsafe kernel now available)
+  (Bruno Cornec)
+- Fix mindi for 2.6 Failsafe support
+  (Bruno Cornec)
+- mindi now depends on grep &gt;= 2.5 (for -m option)
+  (Marco Puggelli/Bruno Cornec)
+- Fix a bug in LVM context for RHEL4 in GetValueFromField
+  (R&#233;mi Bondoin/Bruno Cornec)
+- New RPM Build environement (Bruno Cornec)
+- mindi now supports x86_64 natively (Bruno Cornec)
+- stop creating further size of floppy disks if the smaller one succeeds
+  (Bruno Cornec)
+
+-- 
+Linux Solution Consultant   / Open Source Evangelist \        HP C&amp;I EMEA IET
+<A HREF="http://www.mondorescue.org">http://www.mondorescue.org</A> / HP/Intel Solution Center \  <A HREF="http://hpintelco.net">http://hpintelco.net</A>
+Des infos sur Linux?  <A HREF="http://www.HyPer-Linux.org">http://www.HyPer-Linux.org</A>      <A HREF="http://www.hp.com/linux">http://www.hp.com/linux</A>
+La musique ancienne?  <A HREF="http://www.musique-ancienne.org">http://www.musique-ancienne.org</A> <A HREF="http://www.medieval.org">http://www.medieval.org</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#3">[ date ]</a>
+              <a href="thread.html#3">[ thread ]</a>
+              <a href="subject.html#3">[ subject ]</a>
+              <a href="author.html#3">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

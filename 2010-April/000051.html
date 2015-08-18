@@ -1,0 +1,173 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.3 is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2010-April/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%0A%092.2.9.3%20is%20now%20available&In-Reply-To=%3C20100416231112.4D01761B%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.3 is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%0A%092.2.9.3%20is%20now%20available&In-Reply-To=%3C20100416231112.4D01761B%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.3 is now available">bruno at mondorescue.org
+       </A><BR>
+    <I>Sat Apr 17 01:11:12 CEST 2010</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#51">[ date ]</a>
+              <a href="thread.html#51">[ thread ]</a>
+              <a href="subject.html#51">[ subject ]</a>
+              <a href="author.html#51">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Project mondorescue version 2.2.9.3 is now available
+
+The project team is happy to announce the availability of a newest version of
+mondorescue 2.2.9.3. Enjoy it as usual!
+
+Now available at <A HREF="ftp://ftp.mondorescue.org">ftp://ftp.mondorescue.org</A>
+
+Again fixes for improved support of LVM device exclusion, including fixes for
+LVM issues in 2.2.9.2, fixes for grub on OpenSuSE restoration support, and for
+a crash when backuping NTFS FS, among other fixes detailed below.
+
+./debian/3.1/mondo_2.2.9.3-1_i386.deb              ./debian/3.1/mindi_2.0.7.3-1_i386.deb
+./debian/4.0/mondo_2.2.9.3-1_i386.deb              ./debian/4.0/mindi_2.0.7.3-1_i386.deb
+./debian/4.0/mondo_2.2.9.3-1_amd64.deb             ./debian/4.0/mindi_2.0.7.3-1_amd64.deb
+./debian/5.0/mondo_2.2.9.3-1_i386.deb              ./debian/5.0/mindi_2.0.7.3-1_i386.deb
+./debian/5.0/mondo_2.2.9.3-1_amd64.deb             ./debian/5.0/mindi_2.0.7.3-1_amd64.deb
+./fedora/4/mindi-2.0.7.3-1.fc4.i386.rpm            ./fedora/5/mindi-2.0.7.3-1.fc5.i386.rpm
+./fedora/6/mindi-2.0.7.3-1.fc6.i386.rpm            ./fedora/6/mindi-2.0.7.3-1.fc6.x86_64.rpm
+./fedora/7/mindi-2.0.7.3-1.fc7.i386.rpm            ./fedora/7/mindi-2.0.7.3-1.fc7.x86_64.rpm
+./fedora/8/mindi-2.0.7.3-1.fc8.i386.rpm            ./fedora/8/mindi-2.0.7.3-1.fc8.x86_64.rpm
+./fedora/9/mindi-2.0.7.3-1.fc9.i386.rpm            ./fedora/9/mindi-2.0.7.3-1.fc9.x86_64.rpm
+./fedora/10/mindi-2.0.7.3-1.fc10.i386.rpm          ./fedora/10/mindi-2.0.7.3-1.fc10.x86_64.rpm
+./fedora/11/mindi-2.0.7.3-1.fc11.i586.rpm          ./fedora/11/mindi-2.0.7.3-1.fc11.x86_64.rpm
+./fedora/12/mindi-2.0.7.3-1.fc12.i386.rpm          ./fedora/12/mindi-2.0.7.3-1.fc12.x86_64.rpm
+./mandriva/2006.0/                                 ./mandriva/2007.0/
+mindi-2.0.7.3-1.mdv2006.0.i586.rpm                 mindi-2.0.7.3-1.mdv2007.0.i586.rpm
+./mandriva/2007.0/                                 ./mandriva/2007.1/
+mondo-2.2.9.3-2.mdv2007.0.i586.rpm                 mindi-2.0.7.3-1.mdv2007.1.i586.rpm
+./mandriva/2007.1/                                 ./mandriva/2007.1/
+mindi-2.0.7.3-1.mdv2007.1.x86_64.rpm               mondo-2.2.9.3-2.mdv2007.1.i586.rpm
+./mandriva/2007.1/                                 ./mandriva/2008.0/
+mondo-2.2.9.3-2.mdv2007.1.x86_64.rpm               mindi-2.0.7.3-1.mdv2008.0.i586.rpm
+./mandriva/2008.0/                                 ./mandriva/2008.1/
+mindi-2.0.7.3-1.mdv2008.0.x86_64.rpm               mindi-2.0.7.3-1.mdv2008.1.i586.rpm
+./mandriva/2008.1/                                 ./mandriva/2008.1/
+mondo-2.2.9.3-2.mdv2008.1.x86_64.rpm               mindi-2.0.7.3-1.mdv2008.1.x86_64.rpm
+./mandriva/2009.0/                                 ./mandriva/2009.0/
+mindi-2.0.7.3-1.mdv2009.0.i586.rpm                 mindi-2.0.7.3-1.mdv2009.0.x86_64.rpm
+./mandriva/2009.0/                                 ./mandriva/2009.0/
+mondo-2.2.9.3-2.mdv2009.0.i586.rpm                 mondo-2.2.9.3-2.mdv2009.0.x86_64.rpm
+./mandriva/2009.1/                                 ./mandriva/2009.1/
+mindi-2.0.7.3-1.mdv2009.1.x86_64.rpm               mindi-2.0.7.3-1.mdv2009.1.i586.rpm
+./mandriva/2010.0/                                 ./mandriva/2010.0/
+mindi-2.0.7.3-1.mdv2010.0.i586.rpm                 mindi-2.0.7.3-1.mdv2010.0.x86_64.rpm
+./redhat/9/mindi-2.0.7.3-1.redhat9.i386.rpm        ./redhat/73/mindi-2.0.7.3-1.redhat73.i386.rpm
+./rhel/2.1/mindi-2.0.7.3-1.rhel2.1.i386.rpm        ./rhel/3/mindi-2.0.7.3-1.rhel3.i386.rpm
+./rhel/3/mindi-2.0.7.3-1.rhel3.x86_64.rpm          ./rhel/4/mindi-2.0.7.3-1.rhel4.i386.rpm
+./rhel/4/mindi-2.0.7.3-1.rhel4.x86_64.rpm          ./rhel/5/mindi-2.0.7.3-1.rhel5.x86_64.rpm
+./rhel/5/mindi-2.0.7.3-1.rhel5.i386.rpm            ./rhel/5/mondo-2.2.9.3-2.rhel5.i386.rpm
+./sles/9/mindi-2.0.7.3-1.sles9.i586.rpm            ./sles/9/mondo-2.2.9.3-2.sles9.i586.rpm
+./sles/10/mindi-2.0.7.3-1.sles10.i586.rpm          ./sles/10/mindi-2.0.7.3-1.sles10.x86_64.rpm
+./sles/11/mindi-2.0.7.3-1.sles11.i586.rpm          ./sles/11/mindi-2.0.7.3-1.sles11.x86_64.rpm
+./suse/10.0/mindi-2.0.7.3-1.suse10.0.i586.rpm      ./suse/10.1/mindi-2.0.7.3-1.suse10.1.i586.rpm
+./suse/10.2/mindi-2.0.7.3-1.suse10.2.x86_64.rpm    ./ubuntu/7.04/mondo_2.2.9.3-1_i386.deb
+./ubuntu/7.04/mindi_2.0.7.3-1_i386.deb             ./ubuntu/7.04/mondo_2.2.9.3-1_amd64.deb
+./ubuntu/7.04/mindi_2.0.7.3-1_amd64.deb            ./ubuntu/6.06/mondo_2.2.9.3-1_i386.deb
+./ubuntu/6.06/mindi_2.0.7.3-1_i386.deb             ./ubuntu/7.10/mondo_2.2.9.3-1_i386.deb
+./ubuntu/7.10/mindi_2.0.7.3-1_i386.deb             ./ubuntu/7.10/mondo_2.2.9.3-1_amd64.deb
+./ubuntu/7.10/mindi_2.0.7.3-1_amd64.deb            ./ubuntu/8.04/mondo_2.2.9.3-1_i386.deb
+./ubuntu/8.04/mindi_2.0.7.3-1_i386.deb             ./ubuntu/8.04/mondo_2.2.9.3-1_amd64.deb
+./ubuntu/8.04/mindi_2.0.7.3-1_amd64.deb            ./ubuntu/8.10/mondo_2.2.9.3-1_i386.deb
+./ubuntu/8.10/mindi_2.0.7.3-1_i386.deb             ./ubuntu/8.10/mondo_2.2.9.3-1_amd64.deb
+./ubuntu/8.10/mindi_2.0.7.3-1_amd64.deb            ./ubuntu/9.04/mondo_2.2.9.3-1_i386.deb
+./ubuntu/9.04/mindi_2.0.7.3-1_i386.deb             ./ubuntu/9.10/mondo_2.2.9.3-1_i386.deb
+./ubuntu/9.10/mindi_2.0.7.3-1_i386.deb             ./ubuntu/9.10/mondo_2.2.9.3-1_amd64.deb
+./ubuntu/9.10/mindi_2.0.7.3-1_amd64.deb            ./asianux/3/mindi-2.0.7.3-1.asx3.i386.rpm
+./asianux/3/mindi-2.0.7.3-1.asx3.x86_64.rpm        ./asianux/2/mindi-2.0.7.3-1.asx2.x86_64.rpm
+./opensuse/11.1/                                   ./opensuse/11.2/
+mindi-2.0.7.3-1.opensuse11.1.i586.rpm              mindi-2.0.7.3-1.opensuse11.2.i586.rpm
+./opensuse/11.2/
+mindi-2.0.7.3-1.opensuse11.2.x86_64.rpm
+
+As usual source packages are also available in the same directory.
+
+Changes are :
+
+MINDI CHANGES
+
+- Fix #414 by adding a function GetPVsForLV to remove PVs from excluded LVs
+(Mike Shapiro)
+- Fix #415 by avoiding integration of unknown devices report from pvscan (Mike
+Shapiro)
+- Fix #413 where list of devices was not re-initialized correctly in a loop
+(Michael Shapiro)
+- Fix a bug on Mandriva modules analysis (Bruno Cornec)
+- Avoid perl warning by removing non-exitent dirs from @INC in
+mindi-get-perl-modules (Bruno Cornec)
+- Avoids error messages from stat in analyze-my-lvm (Bruno Cornec)
+- Adds a missing module for iSCSI support (Bruno Cornec)
+- Minor improvements for logs and display (Bruno Cornec)
+- Attempt to fix #394 by making the script executable and checking existence
+(Bruno Cornec)
+- Fix #393. When using excludevs= also exclude from mountlist the devices
+mentioned (Bruno Cornec)
+- Fix #395. analyze-my-lvm now provides an option to call GiveMapperOfdm that
+can be used in mindi (Bruno Cornec)
+- Fix #391. Adds support for sata_svw for Porliant DL 385 G5p (Bruno Cornec)
+- Adds support for ums-cypress, ocfs2 and Xen modules (Bruno Cornec)
+
+MONDO CHANGES
+
+- Fixes for #414: remove comments from grub conf file if used and improve grub
+conf file generation (Bruno Cornec)
+- Fix #412 by supporting grub-install.unsupported for OpenSuSE and solving an
+issue with the parameter passed to grub for device which should be a device
+name, not a partition (Bruno Cornec)
+- Put an explicit notice of MondoRescue's license: GPLv2 or later (as per
+Hugo's notice in sources) (Bruno Cornec)
+- Fix an initialization bug for network protocol in interactive mode (was NULL
+and not NFS by default) (Bruno Cornec)
+- Try to fix #397 by improving exclusion of binded /proc mount with &quot;none&quot; fs
+type exclusion (Bruno Cornec)
+- Fix #392 by freeing the sz_devfile fifo for ntfs later as it was used in
+between, causing a problem to backup NTFS dev (Bruno Cornec)
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#51">[ date ]</a>
+              <a href="thread.html#51">[ thread ]</a>
+              <a href="subject.html#51">[ subject ]</a>
+              <a href="author.html#51">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

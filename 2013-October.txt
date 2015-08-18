@@ -1,0 +1,20 @@
+From bruno at mondorescue.org  Tue Oct  1 02:03:34 2013
+From: bruno at mondorescue.org (Bruno Cornec)
+Date: Tue, 1 Oct 2013 02:03:34 +0200
+Subject: [Mondorescue-announce] [ANNOUNCE] New 3.2 development branch for
+	MondoRescue
+Message-ID: <20131001000334.6AC5730D@victoria2.home.musique-ancienne.org>
+
+New 3.2 development branch for MondoRescue
+
+A new branch for the development of MondoRescue is now open !
+
+It's been done in order to handle dynamic memory allocation in mondo C code.
+Beta versions should follow soon.
+
+If you're interested by the details, please read https://
+brunocornec.wordpress.com/2013/10/01/new-3-2-development-branch-for-mondorescue
+/
+
+
+

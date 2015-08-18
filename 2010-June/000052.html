@@ -1,0 +1,179 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.4 is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2010-June/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%0A%092.2.9.4%20is%20now%20available&In-Reply-To=%3C20100612231714.C0252464%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   <LINK REL="Next"  HREF="000053.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.4 is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20Project%20mondorescue%20version%0A%092.2.9.4%20is%20now%20available&In-Reply-To=%3C20100612231714.C0252464%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] [ANNOUNCE] Project mondorescue version	2.2.9.4 is now available">bruno at mondorescue.org
+       </A><BR>
+    <I>Sun Jun 13 01:17:14 CEST 2010</I>
+    <P><UL>
+        
+        <LI>Next message: <A HREF="000053.html">[Mondorescue-announce] [ANNOUNCE] Mindi 2.0.7.5 is now available
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#52">[ date ]</a>
+              <a href="thread.html#52">[ thread ]</a>
+              <a href="subject.html#52">[ subject ]</a>
+              <a href="author.html#52">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Project mondorescue version 2.2.9.4 is now available
+
+The project team is happy to announce the availability of a newest version of
+mondorescue 2.2.9.4. Enjoy it as usual!
+
+This version is fixing an issue of abusive umount in mindi, support for Xen
+kernels, back to normal perf in filelist analysis and preservation of the cmp
+command in all cases. More is detailed at the end of the announce.
+
+Now available at <A HREF="ftp://ftp.mondorescue.org">ftp://ftp.mondorescue.org</A>
+
+./debian/3.1/mondo_2.2.9.4-1_i386.deb              ./debian/3.1/mindi_2.0.7.4-1_i386.deb
+./debian/4.0/mondo_2.2.9.4-1_i386.deb              ./debian/4.0/mindi_2.0.7.4-1_i386.deb
+./debian/4.0/mondo_2.2.9.4-1_amd64.deb             ./debian/4.0/mindi_2.0.7.4-1_amd64.deb
+./debian/5.0/mondo_2.2.9.4-1_i386.deb              ./debian/5.0/mindi_2.0.7.4-1_i386.deb
+./debian/5.0/mondo_2.2.9.4-1_amd64.deb             ./debian/5.0/mindi_2.0.7.4-1_amd64.deb
+./fedora/4/mondo-2.2.9.4-1.fc4.i386.rpm            ./fedora/4/mindi-2.0.7.4-1.fc4.i386.rpm
+./fedora/5/mondo-2.2.9.4-1.fc5.i386.rpm            ./fedora/5/mindi-2.0.7.4-1.fc5.i386.rpm
+./fedora/6/mondo-2.2.9.4-1.fc6.i386.rpm            ./fedora/6/mindi-2.0.7.4-1.fc6.i386.rpm
+./fedora/6/mondo-2.2.9.4-1.fc6.x86_64.rpm          ./fedora/6/mindi-2.0.7.4-1.fc6.x86_64.rpm
+./fedora/7/mondo-2.2.9.4-1.fc7.i386.rpm            ./fedora/7/mindi-2.0.7.4-1.fc7.i386.rpm
+./fedora/7/mondo-2.2.9.4-1.fc7.x86_64.rpm          ./fedora/7/mindi-2.0.7.4-1.fc7.x86_64.rpm
+./fedora/8/mondo-2.2.9.4-1.fc8.i386.rpm            ./fedora/8/mindi-2.0.7.4-1.fc8.i386.rpm
+./fedora/8/mondo-2.2.9.4-1.fc8.x86_64.rpm          ./fedora/8/mindi-2.0.7.4-1.fc8.x86_64.rpm
+./fedora/9/mondo-2.2.9.4-1.fc9.i386.rpm            ./fedora/9/mindi-2.0.7.4-1.fc9.i386.rpm
+./fedora/9/mondo-2.2.9.4-1.fc9.x86_64.rpm          ./fedora/9/mindi-2.0.7.4-1.fc9.x86_64.rpm
+./fedora/10/mondo-2.2.9.4-1.fc10.i386.rpm          ./fedora/10/mindi-2.0.7.4-1.fc10.i386.rpm
+./fedora/10/mondo-2.2.9.4-1.fc10.x86_64.rpm        ./fedora/10/mindi-2.0.7.4-1.fc10.x86_64.rpm
+./fedora/11/mondo-2.2.9.4-1.fc11.i586.rpm          ./fedora/11/mindi-2.0.7.4-1.fc11.i586.rpm
+./fedora/11/mondo-2.2.9.4-1.fc11.x86_64.rpm        ./fedora/11/mindi-2.0.7.4-1.fc11.x86_64.rpm
+./fedora/12/mondo-2.2.9.4-1.fc12.i386.rpm          ./fedora/12/mindi-2.0.7.4-1.fc12.i386.rpm
+./fedora/12/mondo-2.2.9.4-1.fc12.x86_64.rpm        ./fedora/12/mindi-2.0.7.4-1.fc12.x86_64.rpm
+./fedora/13/mondo-2.2.9.4-1.fc13.i386.rpm          ./fedora/13/mindi-2.0.7.4-1.fc13.i386.rpm
+./fedora/13/mondo-2.2.9.4-1.fc13.x86_64.rpm        ./fedora/13/mindi-2.0.7.4-1.fc13.x86_64.rpm
+./mandriva/2006.0/                                 ./mandriva/2007.0/
+mindi-2.0.7.4-1.mdv2006.0.i586.rpm                 mindi-2.0.7.4-1.mdv2007.0.i586.rpm
+./mandriva/2007.1/                                 ./mandriva/2007.1/
+mindi-2.0.7.4-1.mdv2007.1.i586.rpm                 mindi-2.0.7.4-1.mdv2007.1.x86_64.rpm
+./mandriva/2008.0/                                 ./mandriva/2008.0/
+mondo-2.2.9.4-1.mdv2008.0.i586.rpm                 mindi-2.0.7.4-1.mdv2008.0.i586.rpm
+./mandriva/2008.0/                                 ./mandriva/2008.0/
+mondo-2.2.9.4-1.mdv2008.0.x86_64.rpm               mindi-2.0.7.4-1.mdv2008.0.x86_64.rpm
+./mandriva/2008.1/                                 ./mandriva/2008.1/
+mondo-2.2.9.4-1.mdv2008.1.i586.rpm                 mindi-2.0.7.4-1.mdv2008.1.i586.rpm
+./mandriva/2008.1/                                 ./mandriva/2008.1/
+mondo-2.2.9.4-1.mdv2008.1.x86_64.rpm               mindi-2.0.7.4-1.mdv2008.1.x86_64.rpm
+./mandriva/2009.0/                                 ./mandriva/2009.0/
+mindi-2.0.7.4-1.mdv2009.0.i586.rpm                 mindi-2.0.7.4-1.mdv2009.0.x86_64.rpm
+./mandriva/2009.1/                                 ./mandriva/2009.1/
+mondo-2.2.9.4-1.mdv2009.1.i586.rpm                 mindi-2.0.7.4-1.mdv2009.1.i586.rpm
+./mandriva/2009.1/                                 ./mandriva/2009.1/
+mondo-2.2.9.4-1.mdv2009.1.x86_64.rpm               mindi-2.0.7.4-1.mdv2009.1.x86_64.rpm
+./mandriva/2010.0/                                 ./mandriva/2010.0/
+mondo-2.2.9.4-1.mdv2010.0.i586.rpm                 mindi-2.0.7.4-1.mdv2010.0.i586.rpm
+./mandriva/2010.0/                                 ./mandriva/2010.0/
+mondo-2.2.9.4-1.mdv2010.0.x86_64.rpm               mindi-2.0.7.4-1.mdv2010.0.x86_64.rpm
+./redhat/9/mindi-2.0.7.4-1.redhat9.i386.rpm        ./redhat/73/mindi-2.0.7.4-1.redhat73.i386.rpm
+./rhel/2.1/mindi-2.0.7.4-1.rhel2.1.i386.rpm        ./rhel/2.1/mondo-2.2.9.4-1.rhel2.1.i386.rpm
+./rhel/3/mondo-2.2.9.4-1.rhel3.i386.rpm            ./rhel/3/mindi-2.0.7.4-1.rhel3.i386.rpm
+./rhel/3/mondo-2.2.9.4-1.rhel3.x86_64.rpm          ./rhel/3/mindi-2.0.7.4-1.rhel3.x86_64.rpm
+./rhel/4/mondo-2.2.9.4-1.rhel4.i386.rpm            ./rhel/4/mindi-2.0.7.4-1.rhel4.i386.rpm
+./rhel/4/mondo-2.2.9.4-1.rhel4.x86_64.rpm          ./rhel/4/mindi-2.0.7.4-1.rhel4.x86_64.rpm
+./rhel/5/mondo-2.2.9.4-1.rhel5.i386.rpm            ./rhel/5/mindi-2.0.7.4-1.rhel5.i386.rpm
+./rhel/5/mondo-2.2.9.4-1.rhel5.x86_64.rpm          ./rhel/5/mindi-2.0.7.4-1.rhel5.x86_64.rpm
+./sles/9/mondo-2.2.9.4-1.sles9.i586.rpm            ./sles/9/mindi-2.0.7.4-1.sles9.i586.rpm
+./sles/10/mondo-2.2.9.4-1.sles10.i586.rpm          ./sles/10/mindi-2.0.7.4-1.sles10.i586.rpm
+./sles/10/mondo-2.2.9.4-1.sles10.x86_64.rpm        ./sles/10/mindi-2.0.7.4-1.sles10.x86_64.rpm
+./sles/11/mindi-2.0.7.4-1.sles11.i586.rpm          ./sles/11/mindi-2.0.7.4-1.sles11.x86_64.rpm
+./suse/10.0/mondo-2.2.9.4-1.suse10.0.i586.rpm      ./suse/10.0/mindi-2.0.7.4-1.suse10.0.i586.rpm
+./suse/10.1/mondo-2.2.9.4-1.suse10.1.i586.rpm      ./suse/10.1/mindi-2.0.7.4-1.suse10.1.i586.rpm
+./ubuntu/7.04/mondo_2.2.9.4-1_i386.deb             ./ubuntu/7.04/mindi_2.0.7.4-1_i386.deb
+./ubuntu/7.04/mondo_2.2.9.4-1_amd64.deb            ./ubuntu/7.04/mindi_2.0.7.4-1_amd64.deb
+./ubuntu/6.06/mondo_2.2.9.4-1_i386.deb             ./ubuntu/6.06/mindi_2.0.7.4-1_i386.deb
+./ubuntu/7.10/mondo_2.2.9.4-1_i386.deb             ./ubuntu/7.10/mindi_2.0.7.4-1_i386.deb
+./ubuntu/7.10/mondo_2.2.9.4-1_amd64.deb            ./ubuntu/7.10/mindi_2.0.7.4-1_amd64.deb
+./ubuntu/8.04/mondo_2.2.9.4-1_i386.deb             ./ubuntu/8.04/mindi_2.0.7.4-1_i386.deb
+./ubuntu/8.04/mondo_2.2.9.4-1_amd64.deb            ./ubuntu/8.04/mindi_2.0.7.4-1_amd64.deb
+./ubuntu/8.10/mondo_2.2.9.4-1_i386.deb             ./ubuntu/8.10/mindi_2.0.7.4-1_i386.deb
+./ubuntu/8.10/mondo_2.2.9.4-1_amd64.deb            ./ubuntu/8.10/mindi_2.0.7.4-1_amd64.deb
+./ubuntu/9.04/mondo_2.2.9.4-1_i386.deb             ./ubuntu/9.04/mindi_2.0.7.4-1_i386.deb
+./ubuntu/9.10/mondo_2.2.9.4-1_i386.deb             ./ubuntu/9.10/mindi_2.0.7.4-1_i386.deb
+./ubuntu/9.10/mondo_2.2.9.4-1_amd64.deb            ./ubuntu/9.10/mindi_2.0.7.4-1_amd64.deb
+./ubuntu/10.04/mondo_2.2.9.4-1_i386.deb            ./ubuntu/10.04/mindi_2.0.7.4-1_i386.deb
+./ubuntu/10.04/mondo_2.2.9.4-1_amd64.deb           ./ubuntu/10.04/mindi_2.0.7.4-1_amd64.deb
+./asianux/3/mondo-2.2.9.4-1.asx3.i386.rpm          ./asianux/3/mindi-2.0.7.4-1.asx3.i386.rpm
+./asianux/3/mondo-2.2.9.4-1.asx3.x86_64.rpm        ./asianux/3/mindi-2.0.7.4-1.asx3.x86_64.rpm
+./asianux/2/mondo-2.2.9.4-1.asx2.x86_64.rpm        ./asianux/2/mindi-2.0.7.4-1.asx2.x86_64.rpm
+./opensuse/11.1/                                   ./opensuse/11.1/
+mondo-2.2.9.4-1.opensuse11.1.i586.rpm              mindi-2.0.7.4-1.opensuse11.1.i586.rpm
+./opensuse/11.2/                                   ./opensuse/11.2/
+mondo-2.2.9.4-1.opensuse11.2.i586.rpm              mindi-2.0.7.4-1.opensuse11.2.i586.rpm
+./opensuse/11.2/                                   ./opensuse/11.2/
+mondo-2.2.9.4-1.opensuse11.2.x86_64.rpm            mindi-2.0.7.4-1.opensuse11.2.x86_64.rpm
+
+As usual source packages are also available in the same directory.
+
+Changes are :
+
+MINDI CHANGES
+
+- Fix #425: Do not blindly remove partitions at end of mindi (Don Hoover)
+- Integrate patch on Xen Kernel support for RHEL 5 (only atm) and fixes #418
+(Michael Shapiro)
+- Fix a bug on ia64 where the boot image generated was removed before use in
+mondo (Bruno Cornec)
+
+MONDO CHANGES
+
+- Attempt to fix problem of slowdown in filelist creation by re-introducing a
+limit to the find command (Bruno Cornec)
+- Remove a wrong usage of mr_strcat with exclude_path in the 2.2.9 version
+(probably cause of #421) (Bruno Cornec)
+- netfs_proto should be initialized in every case, not just in DR (should solve
+remaining NULL reports) (Bruno Cornec)
+- Avoid to have multiple similar calls to mkisofs by using macros (Bruno
+Cornec)
+- Mondoarchive should not try to create a cmp binary if it doesn't exist (Bruno
+Cornec)
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	<LI>Next message: <A HREF="000053.html">[Mondorescue-announce] [ANNOUNCE] Mindi 2.0.7.5 is now available
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#52">[ date ]</a>
+              <a href="thread.html#52">[ thread ]</a>
+              <a href="subject.html#52">[ subject ]</a>
+              <a href="author.html#52">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

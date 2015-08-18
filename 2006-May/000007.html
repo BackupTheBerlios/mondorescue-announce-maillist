@@ -1,0 +1,134 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] [ANNOUNCE] mondo 2.0.8-1 / mindi 1.0.8-1.
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2006-May/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20mondo%202.0.8-1%20/%20mindi%201.0.8-1.&In-Reply-To=%3C20060531154519.GC19538%40morley.grenoble.hp.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] [ANNOUNCE] mondo 2.0.8-1 / mindi 1.0.8-1.</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BANNOUNCE%5D%20mondo%202.0.8-1%20/%20mindi%201.0.8-1.&In-Reply-To=%3C20060531154519.GC19538%40morley.grenoble.hp.com%3E"
+       TITLE="[Mondorescue-announce] [ANNOUNCE] mondo 2.0.8-1 / mindi 1.0.8-1.">Bruno.Cornec at hp.com
+       </A><BR>
+    <I>Wed May 31 17:45:19 CEST 2006</I>
+    <P><UL>
+        
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>I'm happy to announce the availability of a newest version of mondo
+2.0.8-1 / mindi 1.0.8-1. Enjoy it !
+
+Now available at <A HREF="ftp://ftp.mondorescue.org/">ftp://ftp.mondorescue.org/</A>
+
+fedora/4/mondo-2.0.8-1.fc4.i386.rpm fedora/4/mindi-1.0.8-1.fc4.i386.rpm
+fedora/5/mindi-1.0.8-1.fc5.i386.rpm fedora/5/mondo-2.0.8-1.fc5.i386.rpm
+mandrake/10.2/mindi-1.0.8-1.102mdk.i386.rpm
+mandrake/10.2/mondo-2.0.8-1.102mdk.i386.rpm
+mandrake/10.1/mindi-1.0.8-1.101mdk.i386.rpm
+mandrake/10.1/mondo-2.0.8-1.101mdk.i386.rpm
+mandriva/2006.0/mindi-1.0.8-1.20060mdk.i586.rpm
+mandriva/2006.0/mondo-2.0.8-1.20060mdk.i586.rpm
+redhat/7.3/mindi-1.0.8-1.rh73.i386.rpm
+redhat/7.3/mondo-2.0.8-1.rh73.i386.rpm
+redhat/9/mindi-1.0.8-1.rh9.i386.rpm redhat/9/mondo-2.0.8-1.rh9.i386.rpm
+rhel/3/mindi-1.0.8-1.rhel3.i386.rpm rhel/3/mondo-2.0.8-1.rhel3.i386.rpm
+rhel/4/mindi-1.0.8-1.rhel4.i386.rpm rhel/4/mondo-2.0.8-1.rhel4.i386.rpm
+sles/9/mindi-1.0.8-1.sles9.i386.rpm sles/9/mondo-2.0.8-1.sles9.i386.rpm
+suse/10.0/mindi-1.0.8-1.suse10.0.i386.rpm
+suse/10.0/mondo-2.0.8-1.suse10.0.i386.rpm src/mondo-doc-2.0.8-1.tar.gz
+src/mindi-1.0.8-1.tar.gz src/mondo-2.0.8-1.tar.gz
+
+As usual src.rpm packages are also available in the same directory. Also
+a new mondo-doc package is produced for most distributions containing
+all the formats of mondo's documentation. Only there for completion, as
+mondo's package already contains the required doc files.
+
+This version should fix most of latest bugs reported for mindi. the
+2.0.x branch should now enter in a bug fix only mode. All new features
+will be introduced in 2.2.x on which we will now work
+(internationalization, memory management, configuration files, ...)
+
+Changes are :
+
+MONDO:
+
+- new build process (Bruno Cornec)
+- Fix a bug in .spec for RPM build (%attr now unused) (Bruno Cornec)
+- Support of dm and LVM v2 (Andree Leidenfrost)
+- New mr_strtok functionn added and used for dm support (Andree
+  Leidenfrost)
+- Complete doc is now a separate package. mondo still contains the man
+  pages and howto in minimal useful formats (Bruno Cornec)
+- HOWTO now contains a new chapter on unattended support for mondo
+- Increase size (4 times) of include|exclude variables
+- Fix a bug on -I and -E not working with multiple parameters
+- Fix a bug in verify for NFS by swapping nfs_remote_dir and isodir when
+  assembling name for image file to verify (Andree Leidenfrost)
+- Fix mondo when restoring filenames containing blanks (still a problem
+  for filenames with ') (Bruno Cornec)
+- Fix a RPM generation bug for rh7.3 (i386-redhat-linux prefix for
+  binaries) (Bruno Cornec)
+
+MINDI:
+
+- new build process (Bruno Cornec)
+- Fix a bug when a disk less than 2.8 MB can be built, to include enough
+  modules to support SCSI cds (Bruno Cornec)
+- Fix a bug in .spec for RPM build (%attr now unused) (Bruno Cornec)
+- Add support for LABEL on swap partitions (Michel Loiseleur + Julien
+  Pinon)
+- Attempt to fix bug 6827 (addition of a script for busybox udhcpc to
+  support pxe/dhcp restore) (Bruno Cornec)
+- support of dm and LVM v2 (Andree Leidenfrost)
+- analyze-my-lvm is under $MINDI_LIB (Andree Leidenfrost)
+- Fix a bug introduced by trying to avoid an error message when
+  modprobe.d doesn't exist (Johannes Franken)
+- Fix for Bug #6975 (/net is now excluded from kernel search location)
+  (Bruno Cornec)
+- Allow 5670 MB fllopy disks for lilo as well (Bruno Cornec)
+- Add missing net modules (Klaus Ade Johnstad)
+-- 
+Linux Profession Lead EMEA  / Open Source Evangelist \        HP C&amp;I EMEA IET
+<A HREF="http://www.mondorescue.org">http://www.mondorescue.org</A> / HP/Intel Solution Center \  <A HREF="http://hpintelco.net">http://hpintelco.net</A>
+Des infos sur Linux?  <A HREF="http://www.HyPer-Linux.org">http://www.HyPer-Linux.org</A>      <A HREF="http://www.hp.com/linux">http://www.hp.com/linux</A>
+La musique ancienne?  <A HREF="http://www.musique-ancienne.org">http://www.musique-ancienne.org</A> <A HREF="http://www.medieval.org">http://www.medieval.org</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#7">[ date ]</a>
+              <a href="thread.html#7">[ thread ]</a>
+              <a href="subject.html#7">[ subject ]</a>
+              <a href="author.html#7">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

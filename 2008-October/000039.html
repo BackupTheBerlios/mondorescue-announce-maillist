@@ -1,0 +1,128 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] [Mondo-devel] [ANNOUNCE] Project	mondorescue version 2.2.7 is	now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2008-October/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BMondo-devel%5D%20%5BANNOUNCE%5D%20Project%0A%09mondorescue%20version%202.2.7%20is%09now%20available&In-Reply-To=%3C20081013102036.GI9798%40morley.gre.hp.com%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000038.html">
+   
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] [Mondo-devel] [ANNOUNCE] Project	mondorescue version 2.2.7 is	now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20%5BMondo-devel%5D%20%5BANNOUNCE%5D%20Project%0A%09mondorescue%20version%202.2.7%20is%09now%20available&In-Reply-To=%3C20081013102036.GI9798%40morley.gre.hp.com%3E"
+       TITLE="[Mondorescue-announce] [Mondo-devel] [ANNOUNCE] Project	mondorescue version 2.2.7 is	now available">Bruno.Cornec at hp.com
+       </A><BR>
+    <I>Mon Oct 13 12:20:36 CEST 2008</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000038.html">[Mondorescue-announce] [ANNOUNCE] Project mondorescue version 2.2.7	is now available
+</A></li>
+        
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#39">[ date ]</a>
+              <a href="thread.html#39">[ thread ]</a>
+              <a href="subject.html#39">[ subject ]</a>
+              <a href="author.html#39">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>Bruno Cornec said on Mon, Oct 13, 2008 at 09:56:18AM +0200:
+
+&gt;<i> Changes are :
+</I>
+MINDI CHANGES
+
+- Fix a bug with LVMv1 on RHEL3 where mondorestore segfaults at restore
+  time by returning false to LVM in that conf - CASE:1602066867 (Bruno
+Cornec)
+- Fix a USB support bug where the key wasn't made bootable (syslinux.cfg
+  copied in the wrong place) (Brian McKee)
+- Fix a bug in USB mode of mindi when confirmation on device wasn't
+  waiting for an answer (Brian McKee)
+- Use native ld.so config files instead of static ones (Mark Pinkerton)
+- Support /lib64 being a link on Debian (Andree Leidenfrost)
+- Fix for debian lenny support concerning modules dock and
+  ide_cd_mod/ide-cd_mod (Andree Leidenfrost/Arne Bernin)
+- Force LVM to false and remove i-want-my-lvm if analyze-my-lvm fails
+  (Bruno Cornec)
+- Add support for partprobe in deplist.txt (Bruno Cornec)
+- Add support for labeled reiser FS (Ulrich Tehrani)
+- Add support for new Qlogic drivers in mindi (Ulrich Tehrani)
+- Fix a rpmlint warning with modes on rootfs subdirs at 755 in SVN
+  (Bruno Cornec)
+- Fix mindi in wc -l usage, as with parameter instead of on stdin it
+  creates a different output (Bruno Cornec)
+- Add support for OCFS2 file systems at restore time, by adding
+  mkfs.ocfs2 to initrd if needed (Bruno Cornec)
+- Improve logging by adding some /proc content both at backup and
+  restore time (Bruno Cornec)
+- Fix Labelled swap to support 2.6.12 kernel on FC3 which skip only 16
+  bytes and not 105 to find the label. May need further fixes for other
+kernels (Bruno Cornec)
+- Adds support for sis5513 module (IDE) which seems required on some
+  machines (Bruno Cornec)
+- Fix #243 parse /etc/modprobe.conf, look for include statements, and
+  then add the included files to the dependency list (Michael Shapiro)
+- Adds support for ide_cd_mod and pata_sis (Bruno Cornec)
+
+MONDO CHANGES
+
+- Remove useless function calc_orig_size_of_drive_from_mountlist (Bruno
+  Cornec)
+- Removing potential interactive vgremove command (Andree Leidenfrost)
+- Fix #252 by removing shm usage in mondo (Bruno Cornec)
+- Fix #277 compatibility in live mode with previous versions (Bruno
+  Cornec)
+- Add support for labeled reiser FS (Ulrich Tehrani)
+- DSF patch modified to so that get_dsf_mount_list only deal with one
+  path passed as param (Bruno Cornec)
+- Adds support for OCFS2 file system when formating using the right
+  command in which_format_command_do_i_need
+(Bruno Cornec)
+- New function get_dsf_mount_list to support devices with -E and -I
+  (Michael Shapiro)
+- Protect recursive remove of tempdir with test on the look and feel of
+  that dir to avoid removing blindly useful dir :-( (Bruno Cornec)
+- -H should be usable with tapes, especially OBDR ones (Bruno Cornec)
+- Replace a 32kB blocksize fix with the internal blaock size, and adds a
+  call to setblk to try to fix #255, which shouldn't break anything
+(Bruno Cornec)
+- Fix for #261 nsspool and nssvol support (sprobst)
+- Fix #260 restoring when cancel in non disaster mode was a regression
+  on 2.2.5 (Bruno Cornec)
+-- 
+Linux Profession Lead EMEA  / Open Source Evangelist \        HP C&amp;I EMEA IET
+<A HREF="http://www.mondorescue.org">http://www.mondorescue.org</A> / HP/Intel Solution Center \  <A HREF="http://hpintelco.net">http://hpintelco.net</A>
+Des infos sur Linux?  <A HREF="http://www.HyPer-Linux.org">http://www.HyPer-Linux.org</A>      <A HREF="http://www.hp.com/linux">http://www.hp.com/linux</A>
+La musique ancienne?  <A HREF="http://www.musique-ancienne.org">http://www.musique-ancienne.org</A> <A HREF="http://www.medieval.org">http://www.medieval.org</A>
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000038.html">[Mondorescue-announce] [ANNOUNCE] Project mondorescue version 2.2.7	is now available
+</A></li>
+	
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#39">[ date ]</a>
+              <a href="thread.html#39">[ thread ]</a>
+              <a href="subject.html#39">[ subject ]</a>
+              <a href="author.html#39">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>

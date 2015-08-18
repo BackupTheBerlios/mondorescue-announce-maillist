@@ -1,0 +1,157 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML>
+ <HEAD>
+   <TITLE> [Mondorescue-announce] MondoRescue 2.0.9 is now available
+   </TITLE>
+   <LINK REL="Index" HREF="http://lists.berlios.de/pipermail/mondorescue-announce/2006-August/index.html" >
+   <LINK REL="made" HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20MondoRescue%202.0.9%20is%20now%20available&In-Reply-To=%3C20060807215457.GA9924%40victoria2.home.musique-ancienne.org%3E">
+   <META NAME="robots" CONTENT="index,nofollow">
+   <style type="text/css">
+       pre {
+           white-space: pre-wrap;       /* css-2.1, curent FF, Opera, Safari */
+           }
+   </style>
+   <META http-equiv="Content-Type" content="text/html; charset=us-ascii">
+   <LINK REL="Previous"  HREF="000011.html">
+   <LINK REL="Next"  HREF="000013.html">
+ </HEAD>
+ <BODY BGCOLOR="#ffffff">
+   <H1>[Mondorescue-announce] MondoRescue 2.0.9 is now available</H1>
+    <B>Bruno Cornec</B> 
+    <A HREF="mailto:mondorescue-announce%40lists.berlios.de?Subject=Re%3A%20%5BMondorescue-announce%5D%20MondoRescue%202.0.9%20is%20now%20available&In-Reply-To=%3C20060807215457.GA9924%40victoria2.home.musique-ancienne.org%3E"
+       TITLE="[Mondorescue-announce] MondoRescue 2.0.9 is now available">bruno at victoria.frmug.org
+       </A><BR>
+    <I>Mon Aug  7 23:54:57 CEST 2006</I>
+    <P><UL>
+        <LI>Previous message: <A HREF="000011.html">[Mondorescue-announce] New repository/Tools for Mondo Rescue
+</A></li>
+        <LI>Next message: <A HREF="000013.html">[Mondorescue-announce] Package rebuild
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+    <HR>  
+<!--beginarticle-->
+<PRE>MondoRescue 2.0.9 is now available
+
+I'm happy to announce the availability of a newest version of mondoescue
+2.0.9-1. Enjoy it as usual!
+
+Now available at <A HREF="ftp://ftp.mondorescue.org/">ftp://ftp.mondorescue.org/</A>
+
+./debian/3.1/mindi_1.0.9_i386.deb ./debian/3.1/mondo_2.0.9_i386.deb ./fedora/4/
+mindi-1.0.9-1.fc4.i386.rpm ./fedora/4/mondo-2.0.9-1.fc4.i386.rpm ./fedora/5/
+mindi-1.0.9-1.fc5.i586.rpm ./fedora/5/mondo-2.0.9-1.fc5.i586.rpm ./mandrake/
+10.2/mindi-1.0.9-1.102mdk.i586.rpm ./mandrake/10.2/
+mondo-2.0.9-1.102mdk.i586.rpm ./mandrake/10.1/mindi-1.0.9-1.101mdk.i586.rpm ./
+mandrake/10.1/mondo-2.0.9-1.101mdk.i586.rpm ./mandriva/2006.0/
+mindi-1.0.9-1.20060mdk.i586.rpm ./mandriva/2006.0/
+mondo-2.0.9-1.20060mdk.i586.rpm ./redhat/7.3/mindi-1.0.9-1.rh73.i586.rpm ./
+redhat/7.3/mondo-2.0.9-1.rh73.i586.rpm ./redhat/9/mindi-1.0.9-1.rh9.i586.rpm ./
+redhat/9/mondo-2.0.9-1.rh9.i586.rpm ./rhel/3/mindi-1.0.9-1.rhel3.i586.rpm ./
+rhel/3/mondo-2.0.9-1.rhel3.i586.rpm ./rhel/4/mindi-1.0.9-1.rhel4.i586.rpm ./
+rhel/4/mondo-2.0.9-1.rhel4.i586.rpm ./sles/9/mindi-1.0.9-1.sles9.i586.rpm ./
+sles/9/mondo-2.0.9-1.sles9.i586.rpm ./sles/10/mindi-1.0.9-1.sles10.i586.rpm ./
+sles/10/mondo-2.0.9-1.sles10.i586.rpm ./suse/10.0/
+mindi-1.0.9-1.suse10.0.i586.rpm ./suse/10.0/mondo-2.0.9-1.suse10.0.i586.rpm ./
+suse/10.1/mindi-1.0.9-1.suse10.1.i586.rpm ./suse/10.1/
+mondo-2.0.9-1.suse10.1.i586.rpm ./src/mindi-1.0.9.tar.gz ./src/
+mondo-2.0.9.tar.gz
+
+As usual src.rpm packages are also available in the same directory.
+
+SLES 10 packages are now also generated as well as Debian ones, even if you
+should always use Andree's official packages for the moment as they include the
+latest Debian patches.
+
+Changes are :
+
+MINDI CHANGES
+
+- Fix for bug #22 RHEL4 + LVM + LABEL support (Bruno Cornec)
+- Fix for bug #8 keyboard support incorrect (Bruno Cornec)
+- New NFS/PXE support. start-nfs is now a fixed script. Allow more
+possibilities at restore time (Bruno Cornec)
+- new global variables + Bug fixes for LVM (Bruno Cornec)
+- SuSE RPMS now use bzip2 (Lars Rupp/Bruno Cornec)
+- Fix a bug for filesystems with LABEL in fstab not mounted (Bruno Cornec)
+- Qlogic 2300 and 2200 are now supported (Bruno Cornec)
+- Use busybox 1.1.3 for net part (Bruno Cornec)
+- Fix various screen corruption for 'Configure LVM' (Andree Leidenfrost)
+- Fix Adaptec Zero-Channel RAID Cards support bug #6455 (Bruno Cornec)
+- Fix a bug with redhat_label not initialized in the loop systematically
+(Anthony P. Machon/Bruno Cornec)
+- nfsmount option added to allow redeployment from another NFS server (Bruno
+Cornec)
+- Replaced all occurrences of egrep with 'grep -E' and of fgrep with 'grep -F'
+(Andree Leidenfrost)
+- Fix a bug in analyze-my-lvm for RHEL3 where vgdisplay prints an additional
+field sometimes (#) (severine.lombardo_at_acoss.fr/Bruno Cornec)
+- Deal properly with LVM tool lvmiopversion and with lvmcreate_initrd and
+pvdata - fixes Debian bug #351687 (Andree Leidenfrost)
+- Handle the format /dev/mapper/- for LVM devices - fix for Debian bug #362926
+(Andree Leidenfrost)
+
+
+MONDO CHANGES
+
+- Preliminary build process working for Debian and Gentoo (Bruno Cornec)
+- New NFS/PXE support. start-nfs is now a fixed script. Allow more
+possibilities at restore time (Bruno Cornec)
+- Fix some compiler warnings for 64bits mode (Andree Leidenfrost)
+- Fix various screen corruption for 'Configure LVM'/RAID sync (Andree
+Leidenfrost)
+- SuSE RPMS now use bzip2 (Lars Rupp/Bruno Cornec)
+- Exclude ClearCase mvfs type of filesystem from mondo backup
+(rzonum_at_gmail.com/Bruno Cornec)
+- Improved .spec Requires (Fedora/SuSE feedbacks) (Bruno Cornec)
+- Indication for users of IDE burners and 2.6 kernels (Christopher Moriarity/
+Bruno Cornec)
+- remove df -P during restore as busybox doesn't support it (Bruno Cornec)
+- nfsmount option added to allow redeployment from another NFS server (Bruno
+Cornec)
+- This version should work a bit better with files having special char bug #
+7421 - but more to come (Bruno Cornec)
+- Fix Debian Bug #369321 by increasing MAX_TAPECATALOG_ENTRIES to 8192 and
+bkpinfo-&gt;optimal_set_size to 16MB (Andree Leidenfrost)
+- Fix problem with BurnProof+DVD (Andree Leidenfrost)
+- Fix bug #7820: mondo should now support files &gt; 2GB (taps23_at_yahoo.com/
+Bruno Cornec)
+- Replaced all occurrences of egrep with 'grep -E' and of fgrep with 'grep -F'
+(Andree Leidenfrost)
+- Optimize grep usage - fixes Debian bug #222052 (Andree Leidenfrost)
+- Avoid false alerts about growisofs not running under sudo (Andree
+Leidenfrost)
+- Increase PPCFG_RAMDISK_SIZE to 350 MB (Thomas B&#246;rkel/Bruno Cornec)
+- Removed useless mondo-makefilelist (Andree Leidenfrost)
+- Fix a segmentation fault in parse_mdstat() (Andree Leidenfrost)
+- Fix gcc 4.1.2 warnings (Andree Leidenfrost)
+
+
+
+</PRE>
+
+<!--endarticle-->
+    <HR>
+    <P><UL>
+        <!--threads-->
+	<LI>Previous message: <A HREF="000011.html">[Mondorescue-announce] New repository/Tools for Mondo Rescue
+</A></li>
+	<LI>Next message: <A HREF="000013.html">[Mondorescue-announce] Package rebuild
+</A></li>
+         <LI> <B>Messages sorted by:</B> 
+              <a href="date.html#12">[ date ]</a>
+              <a href="thread.html#12">[ thread ]</a>
+              <a href="subject.html#12">[ subject ]</a>
+              <a href="author.html#12">[ author ]</a>
+         </LI>
+       </UL>
+
+<hr>
+<a href="https://lists.berlios.de/mailman/listinfo/mondorescue-announce">More information about the Mondorescue-announce
+mailing list</a><br>
+</body></html>
